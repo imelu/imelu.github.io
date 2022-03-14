@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <script>
         var isMobile = {
             Android: function () {
@@ -29,12 +27,15 @@
         if (isMobile.Android()) {
 
 
-            <model-viewer src="https://imelu.github.io/david2.glb" alt="stuff" auto-rotate camera-controls></model-viewer>
-            //document.location.href = "https://imelu.github.io/david2.glb";
-        }
-        else if (isMobile.iOS()) {
-            document.location.href = "https://imelu.github.io/david2.usdz";
-        }
+            type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js";
+            nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js";
+                <model-viewer src="shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
+    //document.location.href = "https://imelu.github.io/david2.glb";
+    }
+    else if(isMobile.iOS())
+    {
+    document.location.href="https://imelu.github.io/david2.usdz";
+    }
     </script>
 </head>
 <body>
