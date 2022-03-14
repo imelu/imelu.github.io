@@ -24,12 +24,14 @@ var isMobile = {
 
     };
 
-if ( isMobile.Android() ) {
-        document.location.href = "https://imelu.github.io/david2.glb";
+    if (isMobile.Android()) {
+        <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://imelu.github.io/david2.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Avocado</a>
+
+        //document.location.href = "https://imelu.github.io/david2.glb";
     }
 else if(isMobile.iOS())
 {
-document.location.href="https://imelu.github.io/david2.usdz";
+    document.location.href="https://imelu.github.io/david2.usdz";
 }
 </script>
 </head>
