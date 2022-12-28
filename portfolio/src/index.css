@@ -1,13 +1,150 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+﻿body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background-color: #181818;
+    color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fillerbox{
+    display: inline-block;
+    height: 20%;
+    width: 70%;
+}
+
+.project {
+    display: inline-block;
+    height: 100%;
+    width: 70%;
+    margin-left: 27%;
+    margin-top: 5%;
+}
+
+.main-image {
+    max-width: 100%;
+}
+
+.sub-image {
+    max-width: 25%;
+    float:right;
+    margin-right: 10%;
+}
+
+.sub-image img {
+    width: 100%;
+    margin-bottom: 5%;
+    height: auto;
+}
+
+.project-title{
+    float: left;
+    width: 60%;
+    font: 35px "Century Gothic", Futura, bold, sans-serif;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    color: #fff;
+    display: block;
+}
+
+.project .description{
+    float: left;
+    max-width: 50%;
+    height: 100%
+}
+
+.project .description p{
+    font: 18px "Century Gothic", Futura, sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.sideBar{
+    height: 100%; /* 100% Full-height */
+    width: 20%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 0; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #202020; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sideBar text {
+    font: 30px "Century Gothic", Futura, sans-serif;
+    margin-left: 0%;
+    display: block;
+    color: #ffffff;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+.hover-button{
+    padding-left: 0;
+    padding-right: 0;
+    font: 30px "Century Gothic", Futura, sans-serif;
+    background-color: #202020; 
+    color: #ffffff;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    
+    display: block;
+    height: 5%;
+    width: 100%;
+    z-index: -1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hover-button .hover-button--on {
+    background-color: #202020; 
+    padding: 14px;
+}
+  
+.hover-button:hover .hover-button--on {
+    background-color: #525252;
+}
+
+.video-responsive {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 57%;
+    height: auto;
+    padding-bottom: 29.45%;
+}
+  
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.project .description .links{
+    float: none;
+    display: inline-block;
+    padding-left: 40%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
