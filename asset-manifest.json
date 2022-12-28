@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/imelu.github.io/static/css/main.5d4063aa.css",
+    "main.js": "/imelu.github.io/static/js/main.a6129a7f.js",
+    "index.html": "/imelu.github.io/index.html",
+    "main.5d4063aa.css.map": "/imelu.github.io/static/css/main.5d4063aa.css.map",
+    "main.a6129a7f.js.map": "/imelu.github.io/static/js/main.a6129a7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d4063aa.css",
+    "static/js/main.a6129a7f.js"
+  ]
+}
