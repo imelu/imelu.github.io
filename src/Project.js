@@ -16,7 +16,7 @@ const myCld = new Cloudinary({
 const projectPath = 'Portfolio/Images/';
 
 
-export default function Project({ project }){
+export default function Project({ project }) {
     return (
         <div id={project.id} key={project.id}>
             <div className="project">
@@ -36,10 +36,12 @@ export default function Project({ project }){
                     <p>
                         {project.text}
                     </p>
-                    <div className="links">
-                        blablas
-                        <FontAwesomeIcon icon={faItchIo} />
-                    </div>
+                </div>
+                <div className="links">
+                    blablas
+                    <FontAwesomeIcon icon={faItchIo} />
+                    bliblu
+                    <FontAwesomeIcon icon={faItchIo} />
                 </div>
                 <div className="project"></div>
             </div>
