@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/www.lucaimesch.ch/static/css/main.1fbb2c79.css",
-    "main.js": "/www.lucaimesch.ch/static/js/main.808a95e7.js",
-    "index.html": "/www.lucaimesch.ch/index.html",
-    "main.1fbb2c79.css.map": "/www.lucaimesch.ch/static/css/main.1fbb2c79.css.map",
-    "main.808a95e7.js.map": "/www.lucaimesch.ch/static/js/main.808a95e7.js.map"
+    "main.css": "/static/css/main.1fbb2c79.css",
+    "main.js": "/static/js/main.808a95e7.js",
+    "index.html": "/index.html",
+    "main.1fbb2c79.css.map": "/static/css/main.1fbb2c79.css.map",
+    "main.808a95e7.js.map": "/static/js/main.808a95e7.js.map"
   },
   "entrypoints": [
     "static/css/main.1fbb2c79.css",
