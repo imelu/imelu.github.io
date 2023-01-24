@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/www.lucaimesch.ch/static/css/main.5d4063aa.css",
-    "main.js": "/www.lucaimesch.ch/static/js/main.a6129a7f.js",
+    "main.css": "/www.lucaimesch.ch/static/css/main.1fbb2c79.css",
+    "main.js": "/www.lucaimesch.ch/static/js/main.808a95e7.js",
     "index.html": "/www.lucaimesch.ch/index.html",
-    "main.5d4063aa.css.map": "/www.lucaimesch.ch/static/css/main.5d4063aa.css.map",
-    "main.a6129a7f.js.map": "/www.lucaimesch.ch/static/js/main.a6129a7f.js.map"
+    "main.1fbb2c79.css.map": "/www.lucaimesch.ch/static/css/main.1fbb2c79.css.map",
+    "main.808a95e7.js.map": "/www.lucaimesch.ch/static/js/main.808a95e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d4063aa.css",
-    "static/js/main.a6129a7f.js"
+    "static/css/main.1fbb2c79.css",
+    "static/js/main.808a95e7.js"
   ]
 }
