@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://imelu.github.io/",
+  "homepage": "https://lucaimesch.ch",
   "private": true,
   "dependencies": {
     "@cloudinary/react": "^1.7.0",
