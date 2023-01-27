@@ -30,7 +30,15 @@ export default function Project({ project }) {
         <div id={project.folderName} key={project.folderName}>
             <div className="project">
                 <div className="main-image">
+                    {
+                    project.video ? 
                     <YoutubeEmbed embedId={project.videoEmbedID} />
+                    :
+                    <div className="img">
+                    <AdvancedImage cldImg={myCld.image(`${projectPath}${project.folderName}/Title.png`)} alt="0" />
+                    </div>
+                    }
+                    
                 </div>
                 <div className="sub-image">
                     <AdvancedImage cldImg={myCld.image(`${projectPath}${project.folderName}/1.png`)} alt="1" />
@@ -70,15 +78,19 @@ export default function Project({ project }) {
                                     return(
                                         <p>
                                             <a key={project.links.indexOf(l, 0)} href={l.href}>
+                                                
+                                                {`  ${l.type}  `}
                                                 {FaIcon(l.label)}
-                                                {`  ${l.type}`}
                                             </a>
                                         </p>
                                     )
                                 })}</div>
                         }
                     </div>
+                    
                 </div>
+
+                
                 <div className="project"></div>
             </div>
             <div ref={project.myRef} />

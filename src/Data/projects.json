@@ -1,41 +1,45 @@
 {
     "projects": [
         {
-            "name": "Amarillo Harbor",
-            "folderName": "AmarilloHarbor",
-            "video": true,
-            "videoEmbedID": "NKnUlTGhVBo",
-            "date": "2021",
-            "category": "School",
+            "name": "Projected Dreams",
+            "folderName": "ProjectedDreams",
+            "video": false,
+            "videoEmbedID": "ZvsHC4BV-0g",
+            "date": "2022",
+            "category": "Personal",
             "tags": [
                 "concept",
-                "coding",
-                "3d-art"
+                "3d-art",
+                "animation"
             ],
             "description": [
-                "The goal of the Project was to simulate the first few minutes of gameplay of a first person game. The Project was made in collaboration with Dana Senn and Yoshi Zigerli. All 3D Models were made in Blender, which were then imported into Unity, where we put everything together to record the final video.",
-                "My part consisted of modelling the clock tower, interior rooms and the port, as well as the post processing and lighting in unity including the animation of the camera which recorded the video."
+                "Fulfil the shadow girl's dreams by dragging the children's toys from the shelves and dropping them onto the table to create a shadow play. Embark on a wild journey through space and time by recreating silhouettes close to the template in the spotlight to make it real.",
+                "In addition to the story mode, you can also be creative and make your own custom levels to give your friends and family even tougher challenges.",
+                "The first version of this game was created during the Brackeys GameJam 2022 and is currently in further development."
             ],
             "links": [
                 {
                     "type": "Play",
                     "label": "Itch",
-                    "href": "https://rahelgamma.itch.io/overdog"
-                },
-                {
-                    "type": "Trailer",
-                    "label": "Video",
-                    "href": "https://youtu.be/ZvsHC4BV-0g"
+                    "href": "https://aoyuna.itch.io/projected-dreams"
                 }
             ],
             "collaborators": [
                 {
-                    "label": "Yoshi Zigerli",
-                    "href": "https://www.instagram.com/deadhok/"
-                },
-                {
                     "label": "Dana Senn",
                     "href": "https://aoyuna.com/"
+                },
+                {
+                    "label": "Lorenz Kleiser",
+                    "href": "https://lorenzkleiser.ch/"
+                },
+                {
+                    "label": "Robin Good",
+                    "href": "https://www.portfolio-robingood.com/"
+                },
+                {
+                    "label": "Floris Demandt",
+                    "href": "https://florisdemandt.com/"
                 }
             ]
         },
@@ -64,15 +68,78 @@
                     "href": "https://rahelgamma.itch.io/overdog"
                 },
                 {
-                    "type": "Trailer",
+                    "type": "Gameplay",
                     "label": "Video",
-                    "href": "https://youtu.be/ZvsHC4BV-0g"
+                    "href": "https://youtu.be/LVVen4IanSA"
                 }
             ],
             "collaborators": [
                 {
                     "label": "Rahel Gamma",
                     "href": "https://rahelgamma.itch.io/"
+                }
+            ]
+        },
+        {
+            "name": "Unkill",
+            "folderName": "Unkill",
+            "video": true,
+            "videoEmbedID": "becZEnxQofc",
+            "date": "2022",
+            "category": "School",
+            "tags": [
+                "coding",
+                "tech-art",
+                "concept",
+                "3d-art",
+                "animation"
+            ],
+            "description": [
+                "Unkill is a game about a cowboy moving in reverse and \"unkilling\" rabbits.",
+                "It is set in an atmospheric western. The goal is to catch the bullets instead of shooting em. If you fail time will run normal for a moment and the bullet will hit you instead. After 3 hits the game restarts.",
+                "This game was conceptualised for the course \"Character Clash\" at the Zurich University of Arts (ZHdK)."
+            ],
+            "links": [
+                {
+                    "type": "Play",
+                    "label": "Itch",
+                    "href": "https://rahelgamma.itch.io/unkill"
+                }
+            ],
+            "collaborators": [
+                {
+                    "label": "Rahel Gamma",
+                    "href": "https://rahelgamma.itch.io/"
+                }
+            ]
+        },
+        {
+            "name": "Amarillo Harbor",
+            "folderName": "AmarilloHarbor",
+            "video": true,
+            "videoEmbedID": "NKnUlTGhVBo",
+            "date": "2021",
+            "category": "School",
+            "tags": [
+                "concept",
+                "coding",
+                "3d-art"
+            ],
+            "description": [
+                "The goal of the Project was to simulate the first few minutes of gameplay of a first person game. The Project was made in collaboration with Dana Senn and Yoshi Zigerli. All 3D Models were made in Blender, which were then imported into Unity, where we put everything together to record the final video.",
+                "My part consisted of modelling the clock tower, interior rooms and the port, as well as the post processing and lighting in unity including the animation of the camera which recorded the video."
+            ],
+            "links": [
+                
+            ],
+            "collaborators": [
+                {
+                    "label": "Yoshi Zigerli",
+                    "href": "https://www.instagram.com/deadhok/"
+                },
+                {
+                    "label": "Dana Senn",
+                    "href": "https://aoyuna.com/"
                 }
             ]
         }

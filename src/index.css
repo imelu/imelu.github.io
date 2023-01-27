@@ -5,7 +5,7 @@
     color: #fff;
 }
 
-.fillerbox{
+.fillerbox {
     display: inline-block;
     height: 20%;
     width: 70%;
@@ -16,7 +16,7 @@
     height: 100%;
     width: 70%;
     margin-left: 27%;
-    margin-top: 5%;
+    margin-top: 3%;
     position: relative;
 }
 
@@ -24,9 +24,17 @@
     max-width: 100%;
 }
 
+.main-image .img img {
+    width: 57%;
+    height: auto;
+    left: 0;
+    top: 0;
+    float: left;
+}
+
 .sub-image {
-    max-width: 25%;
-    float:right;
+    max-width: 27.16%;
+    float: right;
     margin-right: 10%;
 }
 
@@ -36,17 +44,17 @@
     height: auto;
 }
 
-.project-title{
+.project-title {
     float: left;
     width: 60%;
-    font: 35px "Century Gothic", Futura, bold, sans-serif;
+    font: 35px "Century Gothic", Futura, sans-serif;
     margin-top: 3%;
     margin-bottom: 1%;
     color: #fff;
     display: block;
 }
 
-.project .description{
+.project .description {
     float: left;
     display: block;
     width: 55%;
@@ -54,29 +62,38 @@
     position: static;
 }
 
-.project .description p{
+.project .description p {
     font: 18px "Century Gothic", Futura, sans-serif;
     color: rgb(255, 255, 255);
     display: block;
 }
 
-.project .description .collaborators p{
+.project .description .collaborators p {
     font: 18px "Century Gothic", Futura, sans-serif;
     color: rgb(255, 255, 255);
     display: block;
 }
 
-.sideBar{
-    height: 100%; /* 100% Full-height */
-    width: 20%; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 0; /* Stay on top */
-    top: 0; /* Stay at the top */
+.sideBar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 20%;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 0;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
     left: 0;
-    background-color: #202020; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 30px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #202020;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 30px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .sideBar text {
@@ -86,18 +103,18 @@
     color: #ffffff;
     padding: 16px;
     text-decoration: none;
-  }
-  
-.hover-button{
+}
+
+.hover-button {
     padding-left: 0;
     padding-right: 0;
     font: 30px "Century Gothic", Futura, sans-serif;
-    background-color: #202020; 
+    background-color: #202020;
     color: #ffffff;
     border: none;
     text-align: left;
     text-decoration: none;
-    
+
     display: block;
     height: 5%;
     width: 100%;
@@ -107,13 +124,13 @@
 }
 
 .hover-button .hover-button--on {
-    background-color: #202020; 
+    background-color: #202020;
     padding: 14px;
     padding-left: 7%;
 }
-  
+
 .hover-button:hover .hover-button--on {
-    background-color:#181818;
+    background-color: #181818;
 }
 
 .video-responsive {
@@ -122,9 +139,9 @@
     position: relative;
     width: 57%;
     height: auto;
-    padding-bottom: 29.45%;
+    padding-bottom: 32.1%;
 }
-  
+
 .video-responsive iframe {
     left: 0;
     top: 0;
@@ -133,17 +150,19 @@
     position: absolute;
 }
 
-.project .links{
+.project .links {
+    text-align: right;
     float: right;
-    display: inline;
+    display: block;
     width: 10%;
     height: 10%;
     position: absolute;
-    bottom: 6%;
+    bottom: 43%;
+    right: 43.5%;
     padding-bottom: 0%;
 }
 
-.project .links p{
+.project .links p {
     font: 16px "Century Gothic", Futura, sans-serif;
     color: rgb(255, 255, 255);
     display: block;
