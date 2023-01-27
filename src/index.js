@@ -4,6 +4,8 @@ import './index.css';
 import {v4 as uuid} from 'uuid'
 import ProjectList from './ProjectList';
 
+import ProjectData from './Data/projects.json';
+
 
 function App() {
     return(
@@ -23,21 +25,21 @@ class Navigation extends React.Component {
         return(
             <div>
                 <div className="sideBar"> 
-                    <a href='#0'>
+                    <a href='#Home'>
                         <button className='hover-button'>
                             <div className='hover-button--on'>Home</div>
                         </button>
                     </a>
-                    <a href='#1'>
-                        <button className='hover-button'>
-                            <div className='hover-button--on'>Amarillo Harbor</div>
-                        </button>
-                    </a>
-                    <a href='#2'>
-                        <button className='hover-button'>
-                            <div className='hover-button--on'>OVERDOG</div>
-                        </button>
-                    </a>
+
+                    {ProjectData.projects.map((p)=>{
+                        return(
+                            <a key={ProjectData.projects.indexOf(p, 0)} href={`#${p.folderName}`}>
+                                <button className='hover-button'>
+                                    <div className='hover-button--on'>{p.name}</div>
+                                </button>
+                            </a>
+                        )
+                    })}
                 </div>
             </div>
         );
@@ -45,24 +47,9 @@ class Navigation extends React.Component {
 }
 
 function Projects(){
-    const [projects] = useState([{
-        id : 1,
-        videourl : "NKnUlTGhVBo",
-        title : "Amarillo Harbor",
-        text : "The goal of the Project was to simulate the first few minutes of gameplay of a first person game. The Project was made in collaboration with Dana Senn and Yoshi Zigerli. All 3D Models were made in Blender, which were then imported into Unity, where we put everything together to record the final video. My part consisted of modelling the clock tower, interior rooms and the port, as well as the post processing and lighting in unity including the animation of the camera which recorded the video.",
-        projectName : "AmarilloHarbor"
-    },
-    {
-        id : 2,
-        videourl : "ZvsHC4BV-0g",
-        title : "OVERDOG",
-        text : "The goal of the Project was to simulate the first few minutes of gameplay of a first person game. The Project was made in collaboration with Dana Senn and Yoshi Zigerli. All 3D Models were made in Blender, which were then imported into Unity, where we put everything together to record the final video. My part consisted of modelling the clock tower, interior rooms and the port, as well as the post processing and lighting in unity including the animation of the camera which recorded the video.",
-        projectName : "Overdog"
-    }
-]) 
-
     return(
-        <ProjectList projects={projects}  />
+        <ProjectList projects={ProjectData.projects}  />
+        
     )
 }
 

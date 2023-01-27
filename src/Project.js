@@ -5,7 +5,8 @@ import { AdvancedImage } from '@cloudinary/react'
 import { Cloudinary } from '@cloudinary/url-gen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faItchIo } from '@fortawesome/free-brands-svg-icons'
-
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 const myCld = new Cloudinary({
     cloud: {
@@ -15,33 +16,68 @@ const myCld = new Cloudinary({
 
 const projectPath = 'Portfolio/Images/';
 
+function FaIcon(label){
+    console.log(label);
+    switch(label) {
+        case "Itch": return (<FontAwesomeIcon icon={faItchIo}/>); 
+        case "Video": return (<FontAwesomeIcon icon={faYoutube}/>); 
+        default: return (<></>); 
+    }
+}
 
 export default function Project({ project }) {
     return (
-        <div id={project.id} key={project.id}>
+        <div id={project.folderName} key={project.folderName}>
             <div className="project">
                 <div className="main-image">
-                    <YoutubeEmbed embedId={project.videourl} />
+                    <YoutubeEmbed embedId={project.videoEmbedID} />
                 </div>
                 <div className="sub-image">
-                    <AdvancedImage cldImg={myCld.image(`${projectPath}${project.projectName}/1.png`)} alt="1" />
-                    <AdvancedImage cldImg={myCld.image(`${projectPath}${project.projectName}/2.png`)} alt="2" />
-                    <AdvancedImage cldImg={myCld.image(`${projectPath}${project.projectName}/3.png`)} alt="3" />
-                    <AdvancedImage cldImg={myCld.image(`${projectPath}${project.projectName}/4.png`)} alt="4" />
+                    <AdvancedImage cldImg={myCld.image(`${projectPath}${project.folderName}/1.png`)} alt="1" />
+                    <AdvancedImage cldImg={myCld.image(`${projectPath}${project.folderName}/2.png`)} alt="2" />
+                    <AdvancedImage cldImg={myCld.image(`${projectPath}${project.folderName}/3.png`)} alt="3" />
+                    <AdvancedImage cldImg={myCld.image(`${projectPath}${project.folderName}/4.png`)} alt="4" />
                 </div>
                 <div className="project-title">
-                    {project.title}
+                    {project.name}
                 </div>
                 <div className="description">
-                    <p>
-                        {project.text}
-                    </p>
-                </div>
-                <div className="links">
-                    blablas
-                    <FontAwesomeIcon icon={faItchIo} />
-                    bliblu
-                    <FontAwesomeIcon icon={faItchIo} />
+                    {project.description.map((d)=>{
+                        return(
+                            <p key={project.description.indexOf(d, 0)}>
+                                {d}
+                            </p>
+                        )
+                    } )}
+
+                    <div className="collaborators">
+                        <p> Collaborators: </p>
+                        {project.collaborators.map((c)=>{
+                            return(
+                                <p>
+                                    <a key={project.collaborators.indexOf(c, 0)} href={c.href}>
+                                        <FontAwesomeIcon icon={faUpRightFromSquare} style={{scale: "0.85"}} />
+                                        {`  ${c.label}`}
+                                    </a>
+                                </p>
+                            )
+                        } )}
+                    </div>
+
+                    <div className="links">
+                        {project.links != null &&
+                               <div>{project.links.map((l)=>{
+                                    return(
+                                        <p>
+                                            <a key={project.links.indexOf(l, 0)} href={l.href}>
+                                                {FaIcon(l.label)}
+                                                {`  ${l.type}`}
+                                            </a>
+                                        </p>
+                                    )
+                                })}</div>
+                        }
+                    </div>
                 </div>
                 <div className="project"></div>
             </div>

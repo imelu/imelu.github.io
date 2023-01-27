@@ -1,0 +1,80 @@
+{
+    "projects": [
+        {
+            "name": "Amarillo Harbor",
+            "folderName": "AmarilloHarbor",
+            "video": true,
+            "videoEmbedID": "NKnUlTGhVBo",
+            "date": "2021",
+            "category": "School",
+            "tags": [
+                "concept",
+                "coding",
+                "3d-art"
+            ],
+            "description": [
+                "The goal of the Project was to simulate the first few minutes of gameplay of a first person game. The Project was made in collaboration with Dana Senn and Yoshi Zigerli. All 3D Models were made in Blender, which were then imported into Unity, where we put everything together to record the final video.",
+                "My part consisted of modelling the clock tower, interior rooms and the port, as well as the post processing and lighting in unity including the animation of the camera which recorded the video."
+            ],
+            "links": [
+                {
+                    "type": "Play",
+                    "label": "Itch",
+                    "href": "https://rahelgamma.itch.io/overdog"
+                },
+                {
+                    "type": "Trailer",
+                    "label": "Video",
+                    "href": "https://youtu.be/ZvsHC4BV-0g"
+                }
+            ],
+            "collaborators": [
+                {
+                    "label": "Yoshi Zigerli",
+                    "href": "https://www.instagram.com/deadhok/"
+                },
+                {
+                    "label": "Dana Senn",
+                    "href": "https://aoyuna.com/"
+                }
+            ]
+        },
+        {
+            "name": "OVERDOG",
+            "folderName": "Overdog",
+            "video": true,
+            "videoEmbedID": "ZvsHC4BV-0g",
+            "date": "2022",
+            "category": "School",
+            "tags": [
+                "coding",
+                "tech-art",
+                "concept"
+            ],
+            "description": [
+                "Overdog is a game about Corruption.",
+                "It is a split-screen action-strategy multiplayer with a hide and seek mechanic in a crowd. The game is set in an abstract visualisation of an Airport/Prison. One player sees one side and the opponent the other. On the floor each player will see the opposite side reflected.",
+                "The goal is to \"break the backbone of the system through corruption & become the Overdog... and beat your opponent to it.\"",
+                "This game was conceptualised for the course \"In between Game Design and Architecture\" at the Zurich University of Arts (ZHdK), in collaboration with the ETH zürich."
+            ],
+            "links": [
+                {
+                    "type": "Play",
+                    "label": "Itch",
+                    "href": "https://rahelgamma.itch.io/overdog"
+                },
+                {
+                    "type": "Trailer",
+                    "label": "Video",
+                    "href": "https://youtu.be/ZvsHC4BV-0g"
+                }
+            ],
+            "collaborators": [
+                {
+                    "label": "Rahel Gamma",
+                    "href": "https://rahelgamma.itch.io/"
+                }
+            ]
+        }
+    ]
+}
