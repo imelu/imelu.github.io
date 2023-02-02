@@ -46,8 +46,25 @@ export default function Project({ project }) {
                     <AdvancedImage cldImg={myCld.image(`${projectPath}${project.folderName}/3.png`)} alt="3" />
                     <AdvancedImage cldImg={myCld.image(`${projectPath}${project.folderName}/4.png`)} alt="4" />
                 </div>
-                <div className="project-title">
-                    {project.name}
+                <div className="header">
+                    <div className="title">
+                        {project.name}
+                    </div>
+                    <div className="links">
+                            {project.links != null &&
+                                <div>{project.links.map((l)=>{
+                                        return(
+                                            <p>
+                                                <a key={project.links.indexOf(l, 0)} href={l.href} target="_blank">
+                                                    
+                                                    {`  ${l.type}  `}
+                                                    {FaIcon(l.label)}
+                                                </a>
+                                            </p>
+                                        )
+                                    })}</div>
+                            }
+                    </div>
                 </div>
                 <div className="description">
                     {project.description.map((d)=>{
@@ -63,31 +80,14 @@ export default function Project({ project }) {
                         {project.collaborators.map((c)=>{
                             return(
                                 <p>
-                                    <a key={project.collaborators.indexOf(c, 0)} href={c.href}>
+                                    <a key={project.collaborators.indexOf(c, 0)} href={c.href} target="_blank">
                                         <FontAwesomeIcon icon={faUpRightFromSquare} style={{scale: "0.85"}} />
                                         {`  ${c.label}`}
                                     </a>
                                 </p>
                             )
                         } )}
-                    </div>
-
-                    <div className="links">
-                        {project.links != null &&
-                               <div>{project.links.map((l)=>{
-                                    return(
-                                        <p>
-                                            <a key={project.links.indexOf(l, 0)} href={l.href}>
-                                                
-                                                {`  ${l.type}  `}
-                                                {FaIcon(l.label)}
-                                            </a>
-                                        </p>
-                                    )
-                                })}</div>
-                        }
-                    </div>
-                    
+                    </div>                    
                 </div>
 
                 
