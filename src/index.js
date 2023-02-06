@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {v4 as uuid} from 'uuid'
 import ProjectList from './ProjectList';
+import Modal from './Components/Modal'
 
 import ProjectData from './Data/projects.json';
 
@@ -27,7 +28,7 @@ class Navigation extends React.Component {
                 <div className="sideBar"> 
                     <a href='#Home'>
                         <button className='hover-button'>
-                            <div className='hover-button--on'>Home</div>
+                            <div className='hover-button--on'>Luca Imesch</div>
                         </button>
                     </a>
 
@@ -46,11 +47,60 @@ class Navigation extends React.Component {
     }
 }
 
-function Projects(){
-    return(
-        <ProjectList projects={ProjectData.projects}  />
-        
-    )
+class Projects extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            clickedImg: null,
+            currentIndex: null
+        }
+    }
+
+    onClickedImg = (item, index) => {
+        this.setState({currentIndex: index});
+        this.setState({clickedImg: item});
+        console.log(`${item}${index}.png`)
+    };
+
+    onDismissedImg = () => {
+        this.setState({currentIndex: null});
+        this.setState({clickedImg: null});
+    }
+
+    onPrevImg = () => {
+        if(this.state.currentIndex > 1){
+            this.setState({currentIndex: this.state.currentIndex - 1});
+        } 
+        else
+        {
+            this.setState({currentIndex: 4});
+        }
+    }
+
+    onNextImg = () => {
+        if(this.state.currentIndex < 4){
+            this.setState({currentIndex: this.state.currentIndex + 1});
+        } 
+        else
+        {
+            this.setState({currentIndex: 1});
+        }
+    }
+
+    render(){
+        return(
+            <div>
+                <ProjectList projects={ProjectData.projects} onClickedImg = {(item, index) => this.onClickedImg(item, index)} />
+                {this.state.clickedImg != null && <Modal 
+                clickedImg={this.state.clickedImg} 
+                currentIndex={this.state.currentIndex}
+                onDismissedImg={() => this.onDismissedImg()}
+                prevImg={() => this.onPrevImg()}
+                nextImg={() => this.onNextImg()}
+                />}
+            </div>
+        )
+    }
 }
 
 // ========================================
