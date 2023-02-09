@@ -1,20 +1,57 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, Component } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import {v4 as uuid} from 'uuid'
-import ProjectList from './ProjectList';
+import ProjectList from './Components/ProjectList';
 import Modal from './Components/Modal'
+import ProjectButton from './Components/ProjectButton';
+import Filters from './Components/Filters';
 
 import ProjectData from './Data/projects.json';
+import { computeHeadingLevel } from '@testing-library/react';
 
 
-function App() {
-    return(
-        <>
-            <Navigation />
-            <Projects />
-        </>
-    )
+export default class App extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            filteredTags: []
+        }
+    }
+
+    onAddFilter = (tag) => {
+        if(this.state.filteredTags.includes(tag)) return;
+        this.setState(state => {
+            const list = state.filteredTags.push(tag)
+
+            return {
+                list,
+                value: '',
+            };
+        })
+    }
+
+    onRemoveFilter = (tag) => {
+        var index = this.state.filteredTags.indexOf(tag);
+        
+        this.setState(state => {
+            const list = state.filteredTags.splice(index, 1);
+    
+            return {
+                list,
+                value: '',
+            };            
+        })
+    }
+
+    render(){
+        return(
+            <>
+                <Navigation addFilter={(tag) => this.onAddFilter(tag)} tags={this.state.filteredTags} removeFilter={(tag) => this.onRemoveFilter(tag)}/>
+                <Projects tags={this.state.filteredTags} />
+            </>
+        )
+    }
 }
 
 class Navigation extends React.Component {
@@ -22,23 +59,40 @@ class Navigation extends React.Component {
         super(props);
     }
 
+    containsTag = (project) => {
+        var contains = false;
+        project.tags.map(tag => {
+            if(this.props.tags.includes(tag)){
+                contains = true;
+            }
+        })
+        if(this.props.tags.length === 0) contains = true;
+        return contains;
+    }
+
     render(){
         return(
             <div>
-                <div className="sideBar"> 
-                    <a href='#Home'>
-                        <button className='hover-button'>
-                            <div className='hover-button--on'>Luca Imesch</div>
-                        </button>
-                    </a>
-
+                <a href='#About'>
+                    <button className='about-button'>
+                        <div className='about-button--on'>Luca Imesch</div>
+                    </button>
+                </a>
+                <div className="sideBar Flipped"> 
+                {this.props.tags.length > 0 && <Filters 
+                tags={this.props.tags}
+                removeFilter={(tag) => this.props.removeFilter(tag)}
+                />}
                     {ProjectData.projects.map((p)=>{
                         return(
-                            <a key={ProjectData.projects.indexOf(p, 0)} href={`#${p.folderName}`}>
-                                <button className='hover-button'>
-                                    <div className='hover-button--on'>{p.name}</div>
-                                </button>
-                            </a>
+                            <div>
+                                {this.containsTag(p) && <ProjectButton 
+                                key={ProjectData.projects.indexOf(p, 0)} 
+                                projects={ProjectData.projects} 
+                                project={p}
+                                addFilter = {(tag) => this.props.addFilter(tag)}
+                                />}
+                            </div>
                         )
                     })}
                 </div>
@@ -59,7 +113,6 @@ class Projects extends React.Component {
     onClickedImg = (item, index) => {
         this.setState({currentIndex: index});
         this.setState({clickedImg: item});
-        console.log(`${item}${index}.png`)
     };
 
     onDismissedImg = () => {
@@ -90,13 +143,18 @@ class Projects extends React.Component {
     render(){
         return(
             <div>
-                <ProjectList projects={ProjectData.projects} onClickedImg = {(item, index) => this.onClickedImg(item, index)} />
+                <ProjectList 
+                    projects={ProjectData.projects} 
+                    collaborators={ProjectData.collaborators} 
+                    onClickedImg = {(item, index) => this.onClickedImg(item, index)}
+                    tags={this.props.tags}
+                />
                 {this.state.clickedImg != null && <Modal 
-                clickedImg={this.state.clickedImg} 
-                currentIndex={this.state.currentIndex}
-                onDismissedImg={() => this.onDismissedImg()}
-                prevImg={() => this.onPrevImg()}
-                nextImg={() => this.onNextImg()}
+                    clickedImg={this.state.clickedImg} 
+                    currentIndex={this.state.currentIndex}
+                    onDismissedImg={() => this.onDismissedImg()}
+                    prevImg={() => this.onPrevImg()}
+                    nextImg={() => this.onNextImg()}
                 />}
             </div>
         )

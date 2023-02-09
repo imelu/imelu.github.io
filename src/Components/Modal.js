@@ -1,6 +1,7 @@
 import React, { Component, useState, useRef } from 'react';
 import { AdvancedImage } from '@cloudinary/react'
 import { Cloudinary } from '@cloudinary/url-gen';
+import '../index.css';
 
 const myCld = new Cloudinary({
     cloud: {

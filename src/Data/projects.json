@@ -1,4 +1,50 @@
-{
+{   
+    "collaborators": [
+        {
+            "DanaSenn": [
+                {
+                    "label": "Dana Senn",
+                    "href": "https://aoyuna.com/"
+                }
+            ],
+            "RahelGamma": [
+                {
+                    "label": "Rahel Gamma",
+                    "href": "https://rahelgamma.cargo.site/Home-Set"
+                }
+            ],
+            "LorenzKleiser": [
+                {
+                    "label": "Lorenz Kleiser",
+                    "href": "https://lorenzkleiser.ch/"
+                }
+            ],
+            "RobinGood": [
+                {
+                    "label": "Robin Good",
+                    "href": "https://www.portfolio-robingood.com/"
+                }
+            ],
+            "FlorisDemandt": [
+                {
+                    "label": "Floris Demandt",
+                    "href": "https://florisdemandt.com/"
+                }
+            ],
+            "YoshiZigerli": [
+                {
+                    "label": "Yoshi Zigerli",
+                    "href": "https://www.instagram.com/deadhok/"
+                }
+            ],
+            "ElinGiger": [
+                {
+                    "label": "Elin Giger",
+                    "href": "https://elingiger.ch/"
+                }
+            ]
+        }
+    ],
     "projects": [
         {
             "name": "Projected Dreams",
@@ -8,8 +54,7 @@
             "date": "2022",
             "category": "Personal",
             "tags": [
-                "concept",
-                "3d-art",
+                "3D art",
                 "animation"
             ],
             "description": [
@@ -25,22 +70,10 @@
                 }
             ],
             "collaborators": [
-                {
-                    "label": "Dana Senn",
-                    "href": "https://aoyuna.com/"
-                },
-                {
-                    "label": "Lorenz Kleiser",
-                    "href": "https://lorenzkleiser.ch/"
-                },
-                {
-                    "label": "Robin Good",
-                    "href": "https://www.portfolio-robingood.com/"
-                },
-                {
-                    "label": "Floris Demandt",
-                    "href": "https://florisdemandt.com/"
-                }
+                "DanaSenn",
+                "LorenzKleiser",
+                "RobinGood",
+                "FlorisDemandt"
             ]
         },
         {
@@ -52,8 +85,7 @@
             "category": "School",
             "tags": [
                 "coding",
-                "tech-art",
-                "concept"
+                "tech art"
             ],
             "description": [
                 "Overdog is a game about Corruption.",
@@ -74,10 +106,7 @@
                 }
             ],
             "collaborators": [
-                {
-                    "label": "Rahel Gamma",
-                    "href": "https://rahelgamma.itch.io/"
-                }
+                "RahelGamma"
             ]
         },
         {
@@ -89,9 +118,8 @@
             "category": "School",
             "tags": [
                 "coding",
-                "tech-art",
-                "concept",
-                "3d-art",
+                "tech art",
+                "3D art",
                 "animation"
             ],
             "description": [
@@ -107,10 +135,7 @@
                 }
             ],
             "collaborators": [
-                {
-                    "label": "Rahel Gamma",
-                    "href": "https://rahelgamma.itch.io/"
-                }
+                "RahelGamma"
             ]
         },
         {
@@ -121,9 +146,8 @@
             "date": "2021",
             "category": "School",
             "tags": [
-                "concept",
-                "coding",
-                "3d-art"
+                "3D art",
+                "animation"
             ],
             "description": [
                 "The goal of the Project was to simulate the first few minutes of gameplay of a first person game. The Project was made in collaboration with Dana Senn and Yoshi Zigerli. All 3D Models were made in Blender, which were then imported into Unity, where we put everything together to record the final video.",
@@ -133,14 +157,8 @@
                 
             ],
             "collaborators": [
-                {
-                    "label": "Yoshi Zigerli",
-                    "href": "https://www.instagram.com/deadhok/"
-                },
-                {
-                    "label": "Dana Senn",
-                    "href": "https://aoyuna.com/"
-                }
+                "DanaSenn",
+                "YoshiZigerli"
             ]
         }
     ]

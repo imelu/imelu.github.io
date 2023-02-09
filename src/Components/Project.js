@@ -1,6 +1,6 @@
 import React, { Component, useState, useRef } from 'react';
-import './index.css';
-import YoutubeEmbed from "./YoutubeEmbed";
+import '../index.css';
+import YoutubeEmbed from "../YoutubeEmbed";
 import { AdvancedImage } from '@cloudinary/react'
 import { Cloudinary } from '@cloudinary/url-gen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,6 +8,7 @@ import { faItchIo } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import ModalImage from "react-modal-image";
+
 
 const myCld = new Cloudinary({
     cloud: {
@@ -46,10 +47,10 @@ export default class Project extends Component {
                         
                     </div>
                     <div className="sub-image">
-                        <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/1.png`)} alt="1" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 1)} />
-                        <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/2.png`)} alt="2" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 2)} />
-                        <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/3.png`)} alt="3" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 3)} />
-                        <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/4.png`)} alt="4" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 4)} />
+                        <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/1_small.png`)} alt="1" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 1)} />
+                        <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/2_small.png`)} alt="2" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 2)} />
+                        <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/3_small.png`)} alt="3" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 3)} />
+                        <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/4_small.png`)} alt="4" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 4)} />
                     </div>
                     <div className="header">
                         <div className="title">
@@ -58,14 +59,14 @@ export default class Project extends Component {
                         <div className="links">
                                 {this.props.project.links != null &&
                                     <p>
-                                        <div>{this.props.project.links.map((l)=>{
+                                        {this.props.project.links.map((l)=>{
                                             return(
                                                 <a key={this.props.project.links.indexOf(l, 0)} href={l.href} target="_blank">
                                                     {`  ${l.type}  `}
                                                     {FaIcon(l.label)}
                                                 </a>
                                             )
-                                        })}</div>
+                                        })}
                                     </p>
                                 }
                         </div>
@@ -80,14 +81,13 @@ export default class Project extends Component {
                                 )
                             } )}
                         </div>
-    
                         <div className="collaborators">
                             <p> Collaborators: </p>
                             {this.props.project.collaborators.map((c)=>{
                                 return(
-                                    <p>
-                                        <a key={this.props.project.collaborators.indexOf(c, 0)} href={c.href} target="_blank">
-                                            {`  ${c.label}  `}
+                                    <p key={this.props.project.collaborators.indexOf(c, 0)}>
+                                        <a href={this.props.collaborators[0][c][0].href} target="_blank">
+                                            {`  ${this.props.collaborators[0][c][0].label}  `}
                                             <FontAwesomeIcon icon={faUpRightFromSquare} style={{scale: "0.85"}} />
                                         </a>
                                     </p>
@@ -95,8 +95,6 @@ export default class Project extends Component {
                             } )}
                         </div>                    
                     </div>
-    
-                    
                     <div className="project"></div>
                 </div>
                 <div ref={this.props.project.myRef} />
