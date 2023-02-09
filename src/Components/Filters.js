@@ -22,8 +22,9 @@ export default class Filters extends Component {
                         {this.props.tags.map((t)=>{
                             return(
                                 <button onClick={(event) => this.handleclick(t, event)} className="filtertag" key={this.props.tags.indexOf(t, 0)}>
-                                <FontAwesomeIcon icon={faBan} style={{scale: "0.85" , padingtop: "2"}} />
-                                {` ${t}`}
+                                {`${t}`}
+                                {/*<div className='clearIcon'>{` `}</div>*/}
+                                {/*<FontAwesomeIcon className="clearIcon" icon={faBan} style={{scale: "0.85" , padingtop: "2"}} />*/}
                                 </button>
                             )
                         })}

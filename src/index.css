@@ -139,6 +139,7 @@
     height: calc(100% - 2*(60px + 1.4vw) - 1%);
     /* 100% Full-height */
     width: 17%;
+    /*width: calc(125px + 11vw);*/
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
@@ -234,11 +235,12 @@
     border: none;
     text-align: left;
     text-decoration: none;
-
+    
     display: block;
-    height: calc(50px + 2vw);
+    height: calc(55px + 2.5vw);
     width: 100%;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .hover-button:hover{
@@ -277,6 +279,7 @@
     text-align: left;
     text-decoration: none;
     z-index: 5;
+    cursor: pointer;
 }
 
 .tags .tag:hover {
@@ -286,7 +289,7 @@
 
 .filters {
     background-color: #333333;
-    height: calc(16px + 1.2vw);
+    /*height: calc(16px + 1.2vw);*/
     text-align: left;
     direction: ltr;
     font: "Century Gothic", Futura, sans-serif;
@@ -296,6 +299,9 @@
     padding-top: 3%;
     width: 100%;
     float:left;
+    height: fit-content;
+    padding-bottom: 15px;
+    line-height: 200%;
 }
 
 .filtertag {
@@ -315,13 +321,22 @@
     text-decoration: none;
     z-index: 5;
     width:fit-content;
-    
+    cursor: pointer;
     display: inline-block;
 }
 
 .tags .filtertag:hover {
     background-color: #181818;
     color:#6da8ca;
+    text-decoration:line-through;
+}
+
+.filtertag .clearIcon{
+    display: none;
+}
+
+.filtertag:hover .clearIcon{
+    display: inline;
 }
 
 .video-responsive {
