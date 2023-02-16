@@ -66,6 +66,7 @@
             "date": "2022",
             "category": "Personal",
             "tags": [
+                "gamejam",
                 "3D art",
                 "animation"
             ],
@@ -129,12 +130,13 @@
             "date": "2022",
             "category": "Personal",
             "tags": [
+                "gamejam",
                 "coding",
                 "tech art"
             ],
             "description": [
                 "Bloody Glitter is a fast paced local multiplayer fighting game. You play as ponies that grab other ponies to beat each other up using those ponies.",
-                "The goal of the game is to cover as much area of cloud Nine, the arena, with pony glitter (and blood) as possible before the time runs out. The player that has the biggest area covered in the end wins the game.",
+                "The goal of the game is to cover as much area of cloud Nine, the arena, with pony glitter (and blood) as possible before the time runs out. The player, that has the biggest area covered in the end wins the game.",
                 "This game was created during 4 games of a gamejam to match the topic \"The opposite of power of friendship\""
             ],
             "links": [
