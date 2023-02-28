@@ -1,8 +1,6 @@
 import React, { Component, useState, useRef } from 'react';
 import '../index.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faItchIo } from '@fortawesome/free-brands-svg-icons'
-import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import AboutData from '../Data/about.json';
 
 export default class About extends Component {
     constructor(props) {
@@ -11,9 +9,49 @@ export default class About extends Component {
 
     render(){
         return (
-            <div>
+            <div id={'About'} key={'About'} ref={'About'}>
+                <div className='about'>
+                    <div className='aboutme'>
+                        <div className='description'>
+                        {AboutData.about[0].description.map((d)=>{
+                            return(
+                                <p key={AboutData.about[0].description.indexOf(d, 0)}>
+                                    {d}
+                                </p>
+                            )
+                        } )}
+                        </div>
+                        <div className='contact'>
+                        {AboutData.about[0].description.map((d)=>{
+                                return(
+                                    <p key={AboutData.about[0].description.indexOf(d, 0)}>
+                                        {d}
+                                    </p>
+                                )
+                            } )}
+                        </div>
+                        <div className='links'>
+                        {AboutData.about[0].description.map((d)=>{
+                                return(
+                                    <p key={AboutData.about[0].description.indexOf(d, 0)}>
+                                        {d}
+                                    </p>
+                                )
+                            } )}
+                    </div>
+                    </div>
 
-
+                    
+                    <div className='cv'>
+                    {AboutData.about[0].description.map((d)=>{
+                            return(
+                                <p key={AboutData.about[0].description.indexOf(d, 0)}>
+                                    {d}
+                                </p>
+                            )
+                        } )}
+                    </div>
+                </div>
             </div>
         )
     }

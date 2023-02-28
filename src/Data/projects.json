@@ -54,6 +54,35 @@
                     "label": "Ksenia Ignatenko",
                     "href": "https://soundcloud.com/ksenia-ignatenko"
                 }
+            ],
+            "ThanhLe": [
+                {
+                    "label": "Thanh Le",
+                    "href": "https://linktr.ee/lunaelaine_"
+                }
+            ],
+            "AnjaSchrodin": [
+                {
+                    "label": "Anja Schrodin",
+                    "href": "https://lyannjohnes.itch.io/"
+                }
+            ],
+            "SebastianBoner": [
+                {
+                    "label": "Sebastian Boner",
+                    "href": "https://jackydebu.itch.io/flamenide"
+                }
+            ],
+            "SamuelKnuesel": [
+                {
+                    "label": "Samuel Knüsel",
+                    "href": "https://www.samuelk.ch/"
+                }
+            ],
+            "GameDesignStudents": [
+                {
+                    "label": "Game Design Students"
+                }
             ]
         }
     ],
@@ -137,7 +166,7 @@
             "description": [
                 "Bloody Glitter is a fast paced local multiplayer fighting game. You play as ponies that grab other ponies to beat each other up using those ponies.",
                 "The goal of the game is to cover as much area of cloud Nine, the arena, with pony glitter (and blood) as possible before the time runs out. The player, that has the biggest area covered in the end wins the game.",
-                "This game was created during 4 games of a gamejam to match the topic \"The opposite of power of friendship\""
+                "This game was created during 4 games of a gamejam to match the topic \"The opposite of power of friendship\"."
             ],
             "links": [
                 {
@@ -150,6 +179,33 @@
                 "ElinGiger",
                 "JanoschBüchi",
                 "KseniaIgnatenko"
+            ]
+        },
+        {
+            "name": "I'm Sorry I'm Büsy Today",
+            "folderName": "ImSorryImBuesyToday",
+            "video": true,
+            "videoEmbedID": "q4IS2TSB0Cg",
+            "date": "2022",
+            "category": "School",
+            "tags": [
+                "gamejam",
+                "coding"
+            ],
+            "description": [
+                "This game was created during 4 days at the Zurich University of Arts, in the Game Design department. We were given the task of developing an easily accessible, asymmetrical multiplayer clicker game, inspired by the visual language of old dating shows. ",
+                "Based on this romantic background, we created the storyline in which a cat owner is preparing their flat for a nice date. Their crush is only a few minutes away from the flat when the owner realises that their cat has a completely different plan. Driven by jealousy, the animal begins to vomit hairballs all over the flat. Time is running out and love is at stake.",
+                "My part consisted mainly of coding one of the player controls, as well as the gameloop and shop."
+            ],
+            "links": [
+                {
+                    "type": "Play",
+                    "label": "Itch",
+                    "href": "https://aoyuna.itch.io/im-sorry-im-buesi-today"
+                }
+            ],
+            "collaborators": [
+                "GameDesignStudents"
             ]
         },
         {
@@ -179,6 +235,89 @@
             ],
             "collaborators": [
                 "RahelGamma"
+            ]
+        },
+        {
+            "name": "The 2nd Eye",
+            "folderName": "The2ndEye",
+            "video": true,
+            "videoEmbedID": "oGznJnfvp0o",
+            "date": "2022",
+            "category": "School",
+            "tags": [
+                "coding",
+                "tech art",
+                "3D art",
+                "animation"
+            ],
+            "description": [
+                "The 2nd eye is a 2D roguelike action game with the topics of \"Surrealism\" and \"Breakout\".",
+                "Take control of the second eye in a portrait that has come to life, in order to take revenge on the artist for drawing it messed up, unlike the initially drawn eye. During this journey, the eye extends itself with different limbs to unlock additional abilities, in order to fight through all the paintings drawn by the artist to finally reach him.",
+                "My part consisted of creating all the 3D assets with all animations of the character and all the additional limbs, as well as all the enemies. Additionally I did coded enemy behaviour, as well as special abilities for the main character, among some other smaller features."
+            ],
+            "links": [
+                
+            ],
+            "collaborators": [
+                "ThanhLe",
+                "RobinGood",
+                "AnjaSchrodin",
+                "SebastianBoner"
+            ]
+        },
+        {
+            "name": "Breaking Rat",
+            "folderName": "BreakingRat",
+            "video": true,
+            "videoEmbedID": "E-9Dj_v9xFA",
+            "date": "2022",
+            "category": "Personal",
+            "tags": [
+                "gamejam",
+                "coding"
+            ],
+            "description": [
+                "Breaking Rat is an idle game, in which you can breed several different animals living in the sewers, trying to create the strongest fighter to send in the underground sewer fightclub.",
+                "My part consisted mainly of coding the fightclub, as well as the special abilities the player can unlock through breeding.",
+                "The game was created during 4 days of a gamejab to the requirements of \"Sewer\" and \"Idle Game\"."
+            ],
+            "links": [
+                {
+                    "type": "Play",
+                    "label": "Itch",
+                    "href": "https://aoyuna.itch.io/breaking-rat"
+                }
+            ],
+            "collaborators": [
+                "DanaSenn",
+                "SamuelKnuesel"
+            ]
+        },
+        {
+            "name": "Palmada del Inferno",
+            "folderName": "PalmadaDelInferno",
+            "video": true,
+            "videoEmbedID": "uO9jASNR3U8",
+            "date": "2021",
+            "category": "School",
+            "tags": [
+                "gamejam",
+                "coding"
+            ],
+            "description": [
+                "Slap your way through the famous swiss city Zurich in the fashion of an old-school hack and slash game. This side scroller with multiple bosses and 2 different endings includes an interactive story with romance, drama, betrayal and a twist you won't see coming.",
+                "Palmada del Inferno was conceptualized as part of a student project (Production Days) at the Zurich University of Arts (ZHdK). Our task was to create a game that have the mechanics of a hack and slash game and combine it with telenovelas, esotherics and the city Zurich",
+                "My part consisted mainly of coding the multilinear dialogue system."
+            ],
+            "links": [
+                {
+                    "type": "Play",
+                    "label": "Itch",
+                    "href": "https://sburckhardt.itch.io/palmada-del-inferno-slap"
+                }
+            ],
+            "collaborators": [
+                "GameDesignStudents"
             ]
         },
         {

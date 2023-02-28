@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Navigation from './Components/Navigation'
 import Projects from './Components/Projects'
+import About from './Components/About';
 
 
 export default class App extends Component {
@@ -42,6 +43,7 @@ export default class App extends Component {
         return(
             <>
                 <Navigation addFilter={(tag) => this.onAddFilter(tag)} tags={this.state.filteredTags} removeFilter={(tag) => this.onRemoveFilter(tag)}/>
+                {/*<About/>*/}
                 <Projects tags={this.state.filteredTags} />
             </>
         )

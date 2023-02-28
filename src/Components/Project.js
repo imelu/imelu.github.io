@@ -86,10 +86,17 @@ export default class Project extends Component {
                             {this.props.project.collaborators.map((c)=>{
                                 return(
                                     <p key={this.props.project.collaborators.indexOf(c, 0)}>
-                                        <a href={this.props.collaborators[0][c][0].href} target="_blank">
-                                            {`  ${this.props.collaborators[0][c][0].label}  `}
-                                            <FontAwesomeIcon icon={faUpRightFromSquare} style={{scale: "0.85"}} />
-                                        </a>
+                                        {
+                                            this.props.collaborators[0][c][0].href ? 
+                                            <a href={this.props.collaborators[0][c][0].href} target="_blank">
+                                                {`${this.props.collaborators[0][c][0].label}  `}
+                                                <FontAwesomeIcon icon={faUpRightFromSquare} style={{scale: "0.85"}} />
+                                            </a>
+                                            :
+                                            <div>
+                                                {`${this.props.collaborators[0][c][0].label}`}
+                                            </div>
+                                        }
                                     </p>
                                 )
                             } )}

@@ -1,0 +1,27 @@
+{   
+    "about": [
+        {
+            "description": [
+                "Fulfil the shadow girl's dreams by dragging the children's toys from the shelves and dropping them onto the table to create a shadow play. Embark on a wild journey through space and time by recreating silhouettes close to the template in the spotlight to make it real.",
+                "In addition to the story mode, you can also be creative and make your own custom levels to give your friends and family even tougher challenges.",
+                "The first version of this game was created during the Brackeys GameJam 2022 and is currently in further development."
+            ],
+            "links": [
+                {
+                    "type": "Play",
+                    "label": "Itch",
+                    "href": "https://aoyuna.itch.io/projected-dreams"
+                }
+            ],
+            "contact": [
+                "DanaSenn",
+                "LorenzKleiser",
+                "RobinGood",
+                "FlorisDemandt"
+            ],
+            "cv": [
+                
+            ]
+        }
+    ]
+}

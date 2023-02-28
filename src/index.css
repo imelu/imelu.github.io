@@ -18,6 +18,51 @@
     position: absolute;
 }
 
+.about {
+    display: inline-block;
+    min-height: 100%;
+    width: 70%;
+    margin-left: 27%;
+    margin-top: 3%;
+    position: relative;
+}
+
+.about .aboutme{
+    display: block;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.about .aboutme .description{
+    display: block;
+    height: 50%;
+    width: 100%;
+    float: left;
+}
+
+.about .contact{
+    display: block;
+    height: 20%;
+    width: 100%;
+    float: left;
+}
+
+.about .links{
+    display: block;
+    height: 30%;
+    width: 100%;
+    float: left;
+}
+
+.about .cv{
+    display: block;
+    height: 100%;
+    width: 30%;
+    float: right;
+    margin-right: 10%;
+}
+
 .project {
     display: inline-block;
     height: 100%;
