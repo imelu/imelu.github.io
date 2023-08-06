@@ -116,11 +116,11 @@ hr {
 .project .header .title {
     float: left;
     min-width: 50%;
-    margin-top: 3%;
+    margin-top: calc(6% - 1vw);;
     height: auto;
     font: "Century Gothic", Futura, sans-serif;
     font-size: 35px;
-    font-size:calc(90% + 0.9vw);
+    font-size:calc(150% + 0.5vw);
     color: #fff;
     /*display: block; bc flex*/
 }
