@@ -122,14 +122,12 @@ hr {
     font-size: 35px;
     font-size:calc(150% + 0.5vw);
     color: #fff;
-    /*display: block; bc flex*/
 }
 
 .project .header .links {
     margin-top: 1%;
     text-align: right;
     float: right;
-    /*display: block; bc flex*/
     width: 40%;
     height: auto;
     position: relative;
@@ -142,21 +140,16 @@ hr {
     font-size:calc(90% + 0.3vw);
     color: rgb(255, 255, 255);
     float: right;
-    /*display: block; bc flex*/
 }
 
 .project .descriptionbox {
     float: left;
-    /*display: block; bc flex*/
-    /*width: 57%;*/
     max-height: 30%;
     position: static;
 }
 
 .project .descriptionbox .description {
     float: left;
-    /*display: block; bc flex*/
-    /*width: 70%;*/
     max-height: 30%;
     position: static;
 }
@@ -168,13 +161,10 @@ hr {
     font-size: 18px;
     font-size:calc(90% + 0.3vw);
     color: rgb(255, 255, 255);
-    /*display: block; bc flex*/
 }
 
 .project .descriptionbox .collaborators {
     float: left;
-    /*display: block; bc flex*/
-    /*width: 27%;*/
     max-height: 30%;
     position: static;
     overflow-wrap: break-word;
@@ -186,7 +176,6 @@ hr {
     font-size: 18px;
     font-size:calc(90% + 0.3vw);
     color: rgb(255, 255, 255);
-    /*display: block; bc flex*/
 }
 
 .sideBar {

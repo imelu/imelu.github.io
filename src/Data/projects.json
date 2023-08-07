@@ -79,6 +79,12 @@
                     "href": "https://www.samuelk.ch/"
                 }
             ],
+            "AnnieIrniger": [
+                {
+                    "label": "Annie Irniger",
+                    "href": "https://www.instagram.com/kopftier.jpg/"
+                }
+            ],
             "GameDesignStudents": [
                 {
                     "label": "Game Design Students"
@@ -92,7 +98,7 @@
             "folderName": "ProjectedDreams",
             "video": true,
             "videoEmbedID": "f7clNx-vCO8",
-            "date": "2022",
+            "date": "2023",
             "category": "Personal",
             "tags": [
                 "gamejam",
@@ -116,6 +122,32 @@
                 "LorenzKleiser",
                 "RobinGood",
                 "FlorisDemandt"
+            ]
+        },
+        {
+            "name": "Multifarious",
+            "folderName": "Multifarious",
+            "video": true,
+            "videoEmbedID": "ONG_RtFrG8Y",
+            "date": "2023",
+            "category": "School",
+            "tags": [
+                "coding",
+                "tech art"
+            ],
+            "description": [
+                "Multifarious is a local multiplayer roguelike survival Game about a mycelium trying to survive and eventually thrive through expanding and entering a symbiosis with the forest around it. The players will each take control of a small mobile part of the same fungus network and try to connect it to various natural resources, expanding the mycelium in the act. Beware of the natural predators, which will periodically find their way to the fungus and try to feed on it if not fended off in time.",
+                "This Prototype was developed within 3 months in combination with a Bachelor's paper at the ZHdK in June 2023. "
+            ],
+            "links": [
+                {
+                    "type": "Play",
+                    "label": "Itch",
+                    "href": "https://milkimoone.itch.io/multifarious"
+                }
+            ],
+            "collaborators": [
+                "AnnieIrniger"
             ]
         },
         {
