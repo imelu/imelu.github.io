@@ -16,50 +16,121 @@ hr {
     border: 2px solid #333333;
 }
 
-/*.about {
-    display: inline-block;
-    min-height: 100%;
-    width: 70%;
-    margin-left: 27%;
-    margin-top: 3%;
-    position: relative;
+.about {
+
 }
 
-.about .aboutme{
-    display: block;
-    height: 100%;
-    width: 50%;
+.vl {
+    border-left: 3px solid #6da8ca;
+    height: 105%;
+    position: absolute;
+    left: 59%;
+    top: 0;
+  }
+
+.portrait{
+    margin-top: 8%;
+    width: 85%;
     float: left;
+    height: auto;
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 750px;
+    display: block;
+    margin-bottom: 10%;
+    object-fit: cover;
+    object-position: 0cm -2cm ;
 }
 
 .about .aboutme .description{
+    font: "Century Gothic", Futura, sans-serif;
+    font-style: normal;
+    line-height: 135%;
+    font-size: 18px;
+    font-size:calc(90% + 0.3vw);
+    color: rgb(255, 255, 255);
+    width: 85%;
+    margin-top: 0%;
+    margin-left: 0%;
     display: block;
-    height: 50%;
-    width: 100%;
-    float: left;
 }
 
 .about .contact{
-    display: block;
-    height: 20%;
+    display: flex;
     width: 100%;
-    float: left;
 }
 
 .about .links{
-    display: block;
-    height: 30%;
+    display: flex;
     width: 100%;
-    float: left;
 }
 
-.about .cv{
-    display: block;
-    height: 100%;
-    width: 30%;
+.cv{
+    font: small-caption bold 24px/1 sans-serif;
+    font-size: 26px;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 20%;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+
+.category{
+    font: small-caption bold 24px/1 sans-serif;
+    font-size: 22px;
+    text-align: left;
+    font-weight:bold;
+}
+
+.cvEntry{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.position{
+    width: 75%;
     float: right;
-    margin-right: 10%;
-}*/
+    font: "Fira Sans", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 3px;
+    font-weight:bold;
+}
+
+.company{
+    width: 75%;
+    float: right;
+    font: 1.2em "Fira Sans", sans-serif;
+    font-size: 18px;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    padding-bottom: 3px;
+    color:#6da8ca;
+}
+
+.durtation{
+    
+    width: 25%;
+    font: 1.2em "Fira Sans", sans-serif;
+    font-size: 18px;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+}
+
+.skill{
+    /*margin-left: 5%;*/
+}
+
+.score{
+    width: 17%;
+    float: right;
+    margin-right: 50%;
+    height: auto;
+}
 
 .project {
     /*display: inline-block;
@@ -92,12 +163,6 @@ hr {
     float: left;
 }
 
-.sub-image {
-    /*max-width: 27.16%;*/
-    /*float: right;*/
-    /*margin-right: 10%;*/
-}
-
 .sub-image img {
     width: 100%;
     margin-bottom: 5%;
@@ -122,6 +187,7 @@ hr {
     font-size: 35px;
     font-size:calc(150% + 0.5vw);
     color: #fff;
+    font-weight:bold;
 }
 
 .project .header .links {
@@ -255,6 +321,7 @@ hr {
     background-color: #181818;
     color:#979797;
     z-index: inherit;
+    cursor: pointer;
 }
 
 .about-button .about-button--on {
@@ -548,5 +615,21 @@ a:active {
 
     hr {
         display: none;
+    }
+
+    .about {
+        display: flex;
+    }
+
+    .aboutme {
+        width: 50%;
+        padding-left: 8%;
+        padding-right: 2%;
+    }
+
+    .cv {
+        width: 40%;
+        padding-left: 1%;
+        padding-right: 10%;
     }
 }

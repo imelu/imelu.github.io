@@ -43,7 +43,7 @@ export default class App extends Component {
         return(
             <>
                 <Navigation addFilter={(tag) => this.onAddFilter(tag)} tags={this.state.filteredTags} removeFilter={(tag) => this.onRemoveFilter(tag)}/>
-                {/*<About/>*/}
+                {<About/>}
                 <Projects tags={this.state.filteredTags} />
             </>
         )

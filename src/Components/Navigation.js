@@ -23,7 +23,7 @@ export default class Navigation extends Component {
     render(){
         return(
             <div className="navigation">
-                <a href='#ProjectedDreams'>
+                <a href='#About'>
                     <button className='about-button'>
                         <div className='about-button--on'>Luca Imesch</div>
                     </button>

@@ -78,7 +78,7 @@ export default class Project extends Component {
                                 } )}
                             </div>
                             <div className="collaborators">
-                                <p> Collaborators: </p>
+                            <p> Collaborators: </p>
                                 {this.props.project.collaborators.map((c)=>{
                                     return(
                                         <p key={this.props.project.collaborators.indexOf(c, 0)}>
