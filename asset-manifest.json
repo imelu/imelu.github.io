@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed311da1.css",
-    "main.js": "/static/js/main.9d476513.js",
+    "main.css": "/static/css/main.ad60e91d.css",
+    "main.js": "/static/js/main.3802e32f.js",
     "static/media/Multifarious.pdf": "/static/media/Multifarious.667f0d24a6ee2ee6dbf5.pdf",
     "static/media/CV_LucaImesch.pdf": "/static/media/CV_LucaImesch.30cdf72ef6c773d372d6.pdf",
     "index.html": "/index.html",
-    "main.ed311da1.css.map": "/static/css/main.ed311da1.css.map",
-    "main.9d476513.js.map": "/static/js/main.9d476513.js.map"
+    "main.ad60e91d.css.map": "/static/css/main.ad60e91d.css.map",
+    "main.3802e32f.js.map": "/static/js/main.3802e32f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed311da1.css",
-    "static/js/main.9d476513.js"
+    "static/css/main.ad60e91d.css",
+    "static/js/main.3802e32f.js"
   ]
 }
