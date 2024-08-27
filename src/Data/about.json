@@ -1,48 +1,74 @@
 {   
     "about": [
         {
+            "header": [
+                "Hi! I'm Luca, a switzerland based Game Designer and Programmer."
+            ],
             "description": [
-                "Hi! I'm Luca, a switzerland based Game Designer and Programmer.",
-                "My passion lies in designing interesting, challenging and fun game mechanics, as well as realizing them through coding. I especially enjoy working together with other people, bouncing around ideas and finding the best or most interesting solutions for the problems designing games throws at you."
+                "My passion lies in cooperatively designing interesting, challenging and fun game mechanics, as well as realizing them through coding. I love working in a team in order to inspire and get inspired through others when creating fun games."
+            ],
+            "contact": [
+                "Please feel free to contact me:"
+            ],
+            "contactMail":[
+                "luca-imesch@hotmail.ch"
             ],
             "links": [
                 {
-                    "type": "Play",
-                    "label": "Itch",
-                    "href": "https://aoyuna.itch.io/projected-dreams"
+                    "type": "Linkedin",
+                    "label": "Linkedin",
+                    "href": "https://linkedin.com/in/luca-imesch"
+                },
+                {
+                    "type": "Source",
+                    "label": "Git",
+                    "href": "https://github.com/imelu"
                 }
             ],
-            "contact": [
-                "DanaSenn",
-                "LorenzKleiser",
-                "RobinGood",
-                "FlorisDemandt"
-            ],
+            
             "cv": [
                 {
                     "Experience": [
                         {
+                            "Company": "Aupa.io",
+                            "href": "https://aupa.io/",
+                            "Position": "Software Engineer",
+                            "Duration": "2024 - Present"
+                        },
+                        {
+                            "Company": "Flawberry Studio",
+                            "href": "https://flawberrystudio.com/",
+                            "Position": "Game Designer and 3D Artist",
+                            "Duration": "2022 - Present"
+                        },
+                        
+                        {
                             "Company": "Cool Code",
-                            "Position": "Coding Teacher",
-                            "Duration": "2023 - Present"
+                            "href": "https://www.coolcode.io/",
+                            "Position": "Programming Teacher",
+                            "Duration": "2023 - 2024"
                         },
                         {
                             "Company": "Futurekids",
-                            "Position": "Coding Teacher",
-                            "Duration": "2022 - Present"
+                            "href": "https://futurekids.io/index/en",
+                            "Position": "Programming Teacher",
+                            "Duration": "2022 - 2024"
                         },
                         {
                             "Company": "Zurich University of the Arts",
-                            "Position": "Coding Tutor",
+                            "href": "https://www.zhdk.ch/",
+                            "Position": "Programming Tutor",
                             "Duration": "2022 - 2023"
                         },
                         {
                             "Company": "Lucerne University of Applied Sciences and Arts",
+                            "href": "https://www.hslu.ch/en/",
                             "Position": "Scientific Assistant",
                             "Duration": "2018 - 2020"
                         },
                         {
                             "Company": "Matterhorn Gotthard Railway",
+                            "href": "https://www.matterhorngotthardbahn.ch/en/",
                             "Position": "Electrical Engineering Intern",
                             "Duration": "2013 - 2015"
                         }
@@ -50,16 +76,19 @@
                     "Education": [
                         {
                             "Institution": "Zurich University of the Arts",
+                            "href": "https://www.zhdk.ch/",
                             "Degree": "Bachelor of Arts in Game Design",
                             "Duration": "2020 - 2023"
                         },
                         {
                             "Institution": "Lucerne University of Applied Sciences and Arts",
+                            "href": "https://www.hslu.ch/en/",
                             "Degree": "Bachelor of Science in Electrical Engineering and Information Technology",
                             "Duration": "2015 - 2018"
                         },
                         {
                             "Institution": "Lehrbetriebsverbung Oberwallis & Matterhorn Gotthard Railway",
+                            "href": "https://www.matterhorngotthardbahn.ch/en/",
                             "Degree": "Apprenticeship Electrical Engineering",
                             "Duration": "2011 - 2015"
                         }
@@ -122,7 +151,7 @@
                         },
                         {
                             "Program": "Blender", 
-                            "Score": "5"
+                            "Score": "4"
                         },
                         {
                             "Program": "Git", 

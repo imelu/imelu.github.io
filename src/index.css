@@ -1,5 +1,16 @@
-﻿body {
-    font: 14px "Century Gothic", Futura, sans-serif;
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300&display=swap');
+
+:root {
+    --font-body: 'Montserrat', sans-serif;
+    --font-size-body: 20px;
+    --font-size-header-1: 24px;
+    --font-size-header-2: 30px;
+    --font-size-header-3: 50px;
+    --font-size-filters: 16px;
+}
+
+body {
+    font: var(--font-body);
     margin: 20px;
     background-color: #181818;
     color: #fff;
@@ -20,17 +31,11 @@ hr {
 
 }
 
-.vl {
-    border-left: 3px solid #6da8ca;
-    height: 105%;
-    position: absolute;
-    left: 59%;
-    top: 0;
-  }
+.about .portrait{
+    width: 100%;
+}
 
-.portrait{
-    margin-top: 8%;
-    width: 85%;
+.portrait .img{
     float: left;
     height: auto;
     background-color: #202020;
@@ -38,49 +43,118 @@ hr {
     border-radius: 10px;
     max-height: 750px;
     display: block;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
     object-fit: cover;
-    object-position: 0cm -2cm ;
+    /*object-position: 0cm -2cm ;*/
+    max-width: 100%;
 }
 
 .about .aboutme .description{
-    font: "Century Gothic", Futura, sans-serif;
+    font-family: var(--font-body);
     font-style: normal;
     line-height: 135%;
-    font-size: 18px;
-    font-size:calc(90% + 0.3vw);
+    font-size: var(--font-size-body);
+    line-height: 150%;
     color: rgb(255, 255, 255);
-    width: 85%;
-    margin-top: 0%;
-    margin-left: 0%;
-    display: block;
+    display: flex;
+    width: 100%;    
 }
 
-.about .contact{
+.about .aboutme .contact{
+    font-family: var(--font-body);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size-body);
+    line-height: 150%;
+    color: rgb(255, 255, 255);
     display: flex;
+    width: 100%;    
+}
+
+.about .aboutme .links{
+    font-family: var(--font-body);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 15%;
+    font-size: var(--font-size-body);
+    line-height: 10%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;   
+}
+
+.about .aboutme .mail a{
+    border: none;
+    text-align: left;
+    text-decoration: underline;
+    color: #6da8ca;
+    background-color: transparent;
+    z-index: 0;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+.about .aboutme .mail a:hover{
+    color: #ffffff;
+}
+
+
+.about .aboutme .header{
+    font-family: var(--font-body);
+    font-style: normal;
+    line-height: 135%;
+    font-size: var(--font-size-body);
+    line-height: 150%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-weight:bold;
     width: 100%;
 }
 
-.about .links{
+.contact{
     display: flex;
+    width: 100%;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-weight:bold;
+    text-align: center;
+}
+
+.columnCV {
+    flex-direction: column;
     width: 100%;
 }
 
 .cv{
-    font: small-caption bold 24px/1 sans-serif;
-    font-size: 26px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-header-1);
     text-align: left;
     margin-top: 2%;
     margin-bottom: 20%;
-    flex-direction: column;
     width: 100%;
     display: flex;
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
 }
 
 .category{
-    font: small-caption bold 24px/1 sans-serif;
-    font-size: 22px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-header-1);
     text-align: left;
+    font-weight:bold;
+    margin-top: 7%;
+}
+
+.cv .header{
+    float: right;
+    font-family: var(--font-body);
+    font-size: var(--font-size-header-1);
+    text-align: left;
+    padding-bottom: 3px;
     font-weight:bold;
 }
 
@@ -90,20 +164,20 @@ hr {
 }
 
 .position{
-    width: 75%;
+    width: 70%;
     float: right;
-    font: "Fira Sans", sans-serif;
-    font-size: 20px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
     text-align: left;
     padding-bottom: 3px;
     font-weight:bold;
 }
 
-.company{
-    width: 75%;
+.company {
+    width: 70%;
     float: right;
-    font: 1.2em "Fira Sans", sans-serif;
-    font-size: 18px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
     border: none;
     text-align: left;
     text-decoration: none;
@@ -111,11 +185,34 @@ hr {
     color:#6da8ca;
 }
 
+.company a:link {
+    color: #6da8ca;
+    text-decoration: none;
+}
+
+.company a:visited {
+    color: #6da8ca;
+    text-decoration: none;
+}
+
+.company a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.company a:active {
+    text-decoration: none;
+}
+
+.company .a{
+    color:#ffffff;
+}
+
 .durtation{
     
-    width: 25%;
-    font: 1.2em "Fira Sans", sans-serif;
-    font-size: 18px;
+    width: 30%;
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
     border: none;
     text-align: left;
     text-decoration: none;
@@ -123,10 +220,12 @@ hr {
 
 .skill{
     /*margin-left: 5%;*/
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
 }
 
 .score{
-    width: 17%;
+    width: 13%;
     float: right;
     margin-right: 50%;
     height: auto;
@@ -183,9 +282,8 @@ hr {
     min-width: 50%;
     margin-top: calc(6% - 1vw);;
     height: auto;
-    font: "Century Gothic", Futura, sans-serif;
-    font-size: 35px;
-    font-size:calc(150% + 0.5vw);
+    font-family: var(--font-body);
+    font-size: var(--font-size-header-2);
     color: #fff;
     font-weight:bold;
 }
@@ -196,16 +294,13 @@ hr {
     float: right;
     width: 40%;
     height: auto;
-    position: relative;
     padding-bottom: 0%;
 }
 
 .project .links p {
-    font: "Century Gothic", Futura, sans-serif;
-    font-size: 18px;
-    font-size:calc(90% + 0.3vw);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
     color: rgb(255, 255, 255);
-    float: right;
 }
 
 .project .descriptionbox {
@@ -221,12 +316,12 @@ hr {
 }
 
 .project .descriptionbox .description p {
-    font: "Century Gothic", Futura, sans-serif;
+    font-family: var(--font-body);
     font-style: normal;
     line-height: 135%;
-    font-size: 18px;
-    font-size:calc(90% + 0.3vw);
-    color: rgb(255, 255, 255);
+    font-size: var(--font-size-body);
+    /*font-size:calc(90% + 0.3vw);*/
+    color: rgb(221, 221, 221);
 }
 
 .project .descriptionbox .collaborators {
@@ -234,14 +329,14 @@ hr {
     max-height: 30%;
     position: static;
     overflow-wrap: break-word;
+    color: rgb(221, 221, 221);
 }
 
 .project .descriptionbox .collaborators p {
     text-align: left;
-    font: "Century Gothic", Futura, sans-serif;
-    font-size: 18px;
-    font-size:calc(90% + 0.3vw);
-    color: rgb(255, 255, 255);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    color: rgb(221, 221, 221);
 }
 
 .sideBar {
@@ -268,6 +363,7 @@ hr {
     /* Place content 60px from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
+    border-radius: 20px;
 }
 
 .Flipped{
@@ -284,12 +380,13 @@ hr {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #3e6074;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+    
   }
 
 .about-button {
@@ -302,11 +399,11 @@ hr {
     padding-left: 7%;
     padding-left: 0;
     padding-right: 0;
-    font: "Century Gothic", Futura, sans-serif, bold;
-    font-size: 30px;
-    font-size:calc(70% + 1.4vw);
+    font-family: var(--font-body);
+    font-weight:bold;
+    font-size: var(--font-size-header-3);
     background-color: #181818;
-    color: #ffffff;
+    color: #6da8ca;
     border: none;
     text-align: left;
     text-decoration: none;
@@ -338,11 +435,11 @@ hr {
 .hover-button {
     padding-left: 0;
     padding-right: 0;
-    font: "Century Gothic", Futura, sans-serif, bold;
-    font-size: 30px;
-    font-size:calc(60% + 1vw);
+    font-family: var(--font-body);
+    font-weight:bold;
+    font-size: var(--font-size-header-2);
     background-color: transparent;
-    color: #ffffff;
+    color: #c5c5c5;
     border: none;
     text-align: left;
     text-decoration: none;
@@ -355,12 +452,18 @@ hr {
     z-index: 0;
 }
 
+
+
+
+
 .hover-button:hover{
     position: relative;
     background-color: transparent;
     background-image: var(--hover--image);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #ffffff;
+    /*filter: grayscale(0.7);*/
 }
 
 .hover-button:hover::before{
@@ -388,14 +491,14 @@ hr {
 }
 
 .tags{
-    margin-top: 5px;
+    margin-top: 10px;
     width:95%;
     height:30%;
 }
 
 .tag{
     background-color: #181818;
-    color: #ffffff;
+    color:#979797;
     padding: 5px;
     padding-left: 8px;
     padding-right: 8px;
@@ -403,9 +506,8 @@ hr {
     margin-right: 4px;
     border-radius: 5px;
     float: left;
-    font: "Century Gothic", Futura, sans-serif;
-    font-size: 12px;
-    font-size:calc(6px + 0.4vw);
+    font-family: var(--font-body);
+    font-size: var(--font-size-filters);
     border: none;
     text-align: left;
     text-decoration: none;
@@ -423,9 +525,8 @@ hr {
     /*height: calc(16px + 1.2vw);*/
     text-align: left;
     direction: ltr;
-    font: "Century Gothic", Futura, sans-serif;
-    font-size: 18px;
-    font-size:calc(90% + 0.3vw);
+    font-family: var(--font-body);
+    font-size: var(--font-size-filters);
     padding-left: 7%;
     padding-top: 3%;
     width: 100%;
@@ -444,9 +545,8 @@ hr {
     margin-left: 4px;
     margin-right: 4px;
     border-radius: 5px;
-    font: "Century Gothic", Futura, sans-serif;
-    font-size: 12px;
-    font-size:calc(6px + 0.4vw);
+    font-family: var(--font-body);
+    font-size: var(--font-size-filters);
     border: none;
     text-align: left;
     text-decoration: none;
@@ -542,7 +642,7 @@ a:active {
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 30px;
+    font-size: var(--font-size-header-2);
     color: #ffffff;
     z-index: 999;
     cursor: pointer;
@@ -582,7 +682,20 @@ a:active {
   }
 
   @media only screen and (min-width:1000px) {
+    :root {
+        --font-size-body: 14px;
+        --font-size-header-1: 20px;
+        --font-size-header-2: 22px;
+        --font-size-header-3: 40px;
+        --font-size-filters: 12px;
+    }
+
     .column {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .columnCV {
         flex-direction: column;
         width: 100%;
     }
@@ -593,7 +706,7 @@ a:active {
 
     .project {
         display: flex;
-        padding-top: 35px;
+        padding-top: 0.7%; /*35px*/
     }
 
     .navPlaceholder {
@@ -618,18 +731,65 @@ a:active {
     }
 
     .about {
+        padding-left: 8%;
         display: flex;
     }
 
+    .portrait .img{
+        margin-top: 7%;
+        width: auto;
+        min-width: 20%;
+    }
+
     .aboutme {
-        width: 50%;
-        padding-left: 8%;
+        width: 35%;
         padding-right: 2%;
     }
 
     .cv {
-        width: 40%;
-        padding-left: 1%;
-        padding-right: 10%;
+        width: 35%;
+        margin-left: 3%;
+        margin-right: 10%;
+    }
+
+    .vl {
+        border-left: 3px solid #6da8ca;
+        height: 105%;
+        position: absolute;
+        left: 65%;
+        top: 0;
+    }
+
+    .about .aboutme .description{
+        width: 90%;    
+    }
+    
+    .about .aboutme .header{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:2000px) {
+    :root {
+        --font-size-body: 20px;
+        --font-size-header-1: 24px;
+        --font-size-header-2: 30px;
+        --font-size-header-3: 50px;
+        --font-size-filters: 16px;
+    }
+
+    .project {
+        display: flex;
+        padding-top: 35px;
+    }
+}
+
+@media only screen and (min-width:3000px) {
+    :root {
+        --font-size-body: 26px;
+        --font-size-header-1: 28px;
+        --font-size-header-2: 36px;
+        --font-size-header-3: 6px;
+        --font-size-filters: 19px;
     }
 }

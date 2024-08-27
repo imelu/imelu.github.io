@@ -97,7 +97,7 @@
             "name": "Projected Dreams",
             "folderName": "ProjectedDreams",
             "video": true,
-            "videoEmbedID": "f7clNx-vCO8",
+            "videoEmbedID": "3RphgIrffA0?si=sHMttgkuRqaMKd9f",
             "date": "2023",
             "category": "Personal",
             "tags": [
@@ -106,15 +106,25 @@
                 "animation"
             ],
             "description": [
-                "Fulfil the shadow girl's dreams by dragging the children's toys from the shelves and dropping them onto the table to create a shadow play. Embark on a wild journey through space and time by recreating silhouettes close to the template in the spotlight to make it real.",
-                "In addition to the story mode, you can also be creative and make your own custom levels to give your friends and family even tougher challenges.",
+                "Drag toys from the shelves and drop them on the table to create a shadow play in this cozy puzzle game. As the shadows you cast uncover past family relationships and the environment around you changes and evolves, the lines between reality and fantasy blur.",
+                "Rotate, place, and stack objects on a table in order to recreate a given shadow silhouette on the wall through shadow play. Get creative – There are unlimited solutions to solve puzzles and there’s a variety of achievements to be discovered. You may even find hidden levels!",
                 "The first version of this game was created during the Brackeys GameJam 2022 and is currently in further development."
             ],
             "links": [
                 {
-                    "type": "Play",
-                    "label": "Itch",
-                    "href": "https://aoyuna.itch.io/projected-dreams"
+                    "type": "Wishlist",
+                    "label": "Steam",
+                    "href": "https://store.steampowered.com/app/2318800/Projected_Dreams/"
+                },
+                {
+                    "type": "Discord",
+                    "label": "Discord",
+                    "href": "https://discord.com/invite/eXdbEM6k7t"
+                },
+                {
+                    "type": "Follow",
+                    "label": "Website",
+                    "href": "https://flawberrystudio.com/ProjectedDreams"
                 }
             ],
             "collaborators": [
@@ -128,7 +138,7 @@
             "name": "Multifarious",
             "folderName": "Multifarious",
             "video": true,
-            "videoEmbedID": "ONG_RtFrG8Y",
+            "videoEmbedID": "AcdnHYJMJ0o?si=UzocK2DcRk0mvLtE",
             "date": "2023",
             "category": "School",
             "tags": [
@@ -144,6 +154,17 @@
                     "type": "Play",
                     "label": "Itch",
                     "href": "https://milkimoone.itch.io/multifarious"
+                },
+                {
+                    "type": "Thesis",
+                    "label": "Download",
+                    "href": "../Documents/Multifarious.pdf",
+                    "download": "y"
+                },
+                {
+                    "type": "Source",
+                    "label": "Git",
+                    "href": "https://github.com/imelu/multifarious"
                 }
             ],
             "collaborators": [
@@ -177,6 +198,11 @@
                     "type": "Gameplay",
                     "label": "Video",
                     "href": "https://youtu.be/LVVen4IanSA"
+                },
+                {
+                    "type": "Source",
+                    "label": "Git",
+                    "href": "https://github.com/imelu/overdog"
                 }
             ],
             "collaborators": [
@@ -205,6 +231,11 @@
                     "type": "Play",
                     "label": "Itch",
                     "href": "https://akandamador.itch.io/bloody-glitter"
+                },
+                {
+                    "type": "Source",
+                    "label": "Git",
+                    "href": "https://github.com/imelu/bloodyGlitter"
                 }
             ],
             "collaborators": [
@@ -318,6 +349,11 @@
                     "type": "Play",
                     "label": "Itch",
                     "href": "https://aoyuna.itch.io/breaking-rat"
+                },
+                {
+                    "type": "Source",
+                    "label": "Git",
+                    "href": "https://github.com/imelu/BreakingRat"
                 }
             ],
             "collaborators": [

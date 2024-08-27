@@ -4,9 +4,9 @@ import YoutubeEmbed from "../YoutubeEmbed";
 import { AdvancedImage } from '@cloudinary/react'
 import { Cloudinary } from '@cloudinary/url-gen';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faItchIo } from '@fortawesome/free-brands-svg-icons'
-import { faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faItchIo, faYoutube, faSteam, faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faUpRightFromSquare, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faFile } from '@fortawesome/free-regular-svg-icons'
 import ModalImage from "react-modal-image";
 
 
@@ -21,10 +21,24 @@ const projectPath = 'Portfolio/Images/';
 function FaIcon(label){
     switch(label) {
         case "Itch": return (<FontAwesomeIcon icon={faItchIo}/>); 
+        case "Git": return (<FontAwesomeIcon icon={faGithub}/>);
+        case "Steam": return (<FontAwesomeIcon icon={faSteam}/>); 
         case "Video": return (<FontAwesomeIcon icon={faYoutube}/>); 
+        case "Website": return (<FontAwesomeIcon icon={faGlobe}/>); 
+        case "Discord": return (<FontAwesomeIcon icon={faDiscord}/>); 
+        case "Download": return (<FontAwesomeIcon icon={faFile}/>); 
         default: return (<></>); 
     }
 }
+
+function PDF(label){
+    switch(label) {
+        case "../Documents/Multifarious.pdf": return (require("../Documents/Multifarious.pdf"));
+        default: return (label); 
+    }
+}
+
+
 
 export default class Project extends Component {
     constructor(props) {
@@ -57,9 +71,9 @@ export default class Project extends Component {
                                         <p>
                                             {this.props.project.links.map((l)=>{
                                                 return(
-                                                    <a key={this.props.project.links.indexOf(l, 0)} href={l.href} target="_blank">
-                                                        {`  ${l.type}  `}
-                                                        {FaIcon(l.label)}
+                                                    <a key={this.props.project.links.indexOf(l, 0)} href={PDF(l.href)} target="_blank">
+                                                    {`  ${l.type}  `}
+                                                    {FaIcon(l.label)}
                                                     </a>
                                                 )
                                             })}
