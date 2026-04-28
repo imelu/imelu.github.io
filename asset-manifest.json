@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.b2e99fc0.css",
-    "main.js": "/static/js/main.eafdf71b.js",
+    "main.js": "/static/js/main.6f2c360e.js",
     "static/media/Multifarious.pdf": "/static/media/Multifarious.667f0d24a6ee2ee6dbf5.pdf",
     "static/media/CV_LucaImesch.pdf": "/static/media/CV_LucaImesch.c9570a30d3fd6ba4027e.pdf",
     "index.html": "/index.html",
     "main.b2e99fc0.css.map": "/static/css/main.b2e99fc0.css.map",
-    "main.eafdf71b.js.map": "/static/js/main.eafdf71b.js.map"
+    "main.6f2c360e.js.map": "/static/js/main.6f2c360e.js.map"
   },
   "entrypoints": [
     "static/css/main.b2e99fc0.css",
-    "static/js/main.eafdf71b.js"
+    "static/js/main.6f2c360e.js"
   ]
 }
