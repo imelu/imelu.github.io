@@ -27,15 +27,13 @@ hr {
     border: 2px solid #333333;
 }
 
-.about {
+.about {}
 
-}
-
-.about .portrait{
+.about .portrait {
     width: 100%;
 }
 
-.portrait .img{
+.portrait .img {
     float: left;
     height: auto;
     background-color: #202020;
@@ -49,7 +47,7 @@ hr {
     max-width: 100%;
 }
 
-.about .aboutme .description{
+.about .aboutme .description {
     font-family: var(--font-body);
     font-style: normal;
     line-height: 135%;
@@ -57,10 +55,10 @@ hr {
     line-height: 150%;
     color: rgb(255, 255, 255);
     display: flex;
-    width: 100%;    
+    width: 100%;
 }
 
-.about .aboutme .contact{
+.about .aboutme .contact {
     font-family: var(--font-body);
     font-style: normal;
     font-weight: normal;
@@ -68,10 +66,10 @@ hr {
     line-height: 150%;
     color: rgb(255, 255, 255);
     display: flex;
-    width: 100%;    
+    width: 100%;
 }
 
-.about .aboutme .links{
+.about .aboutme .links {
     font-family: var(--font-body);
     font-style: normal;
     font-weight: normal;
@@ -80,28 +78,28 @@ hr {
     line-height: 10%;
     color: rgb(255, 255, 255);
     display: flex;
-    width: 100%;   
+    width: 100%;
 }
 
-.about .aboutme .mail a{
+.about .aboutme .mail a {
     border: none;
     text-align: left;
     text-decoration: underline;
     color: #6da8ca;
     background-color: transparent;
     z-index: 0;
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
-.about .aboutme .mail a:hover{
+.about .aboutme .mail a:hover {
     color: #ffffff;
 }
 
 
-.about .aboutme .header{
+.about .aboutme .header {
     font-family: var(--font-body);
     font-style: normal;
     line-height: 135%;
@@ -109,16 +107,16 @@ hr {
     line-height: 150%;
     color: rgb(255, 255, 255);
     display: flex;
-    font-weight:bold;
+    font-weight: bold;
     width: 100%;
 }
 
-.contact{
+.contact {
     display: flex;
     width: 100%;
     font-family: var(--font-body);
     font-style: normal;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -127,7 +125,7 @@ hr {
     width: 100%;
 }
 
-.cv{
+.cv {
     font-family: var(--font-body);
     font-size: var(--font-size-header-1);
     text-align: left;
@@ -141,36 +139,36 @@ hr {
     max-width: 100%;
 }
 
-.category{
+.category {
     font-family: var(--font-body);
     font-size: var(--font-size-header-1);
     text-align: left;
-    font-weight:bold;
+    font-weight: bold;
     margin-top: 7%;
 }
 
-.cv .header{
+.cv .header {
     float: right;
     font-family: var(--font-body);
     font-size: var(--font-size-header-1);
     text-align: left;
     padding-bottom: 3px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-.cvEntry{
+.cvEntry {
     width: 100%;
     margin-bottom: 2%;
 }
 
-.position{
+.position {
     width: 70%;
     float: right;
     font-family: var(--font-body);
     font-size: var(--font-size-body);
     text-align: left;
     padding-bottom: 3px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .company {
@@ -182,7 +180,7 @@ hr {
     text-align: left;
     text-decoration: none;
     padding-bottom: 3px;
-    color:#6da8ca;
+    color: #6da8ca;
 }
 
 .company a:link {
@@ -204,12 +202,12 @@ hr {
     text-decoration: none;
 }
 
-.company .a{
-    color:#ffffff;
+.company .a {
+    color: #ffffff;
 }
 
-.durtation{
-    
+.durtation {
+
     width: 30%;
     font-family: var(--font-body);
     font-size: var(--font-size-body);
@@ -218,13 +216,13 @@ hr {
     text-decoration: none;
 }
 
-.skill{
+.skill {
     /*margin-left: 5%;*/
     font-family: var(--font-body);
     font-size: var(--font-size-body);
 }
 
-.score{
+.score {
     width: 13%;
     float: right;
     margin-right: 50%;
@@ -280,12 +278,13 @@ hr {
 .project .header .title {
     float: left;
     min-width: 50%;
-    margin-top: calc(6% - 1vw);;
+    margin-top: calc(6% - 1vw);
+    ;
     height: auto;
     font-family: var(--font-body);
     font-size: var(--font-size-header-2);
     color: #fff;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .project .header .links {
@@ -366,7 +365,7 @@ hr {
     border-radius: 20px;
 }
 
-.Flipped{
+.Flipped {
     direction: rtl;
 }
 
@@ -386,8 +385,8 @@ hr {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-    
-  }
+
+}
 
 .about-button {
     z-index: 0;
@@ -400,7 +399,7 @@ hr {
     padding-left: 0;
     padding-right: 0;
     font-family: var(--font-body);
-    font-weight:bold;
+    font-weight: bold;
     font-size: var(--font-size-header-3);
     background-color: #181818;
     color: #6da8ca;
@@ -414,9 +413,9 @@ hr {
     justify-content: space-between;
 }
 
-.about-button:hover{
+.about-button:hover {
     background-color: #181818;
-    color:#979797;
+    color: #979797;
     z-index: inherit;
     cursor: pointer;
 }
@@ -428,7 +427,7 @@ hr {
 }
 
 .about-button:hover .about-button--on {
-    background-color:transparent;
+    background-color: transparent;
     z-index: inherit;
 }
 
@@ -436,14 +435,14 @@ hr {
     padding-left: 0;
     padding-right: 0;
     font-family: var(--font-body);
-    font-weight:bold;
+    font-weight: bold;
     font-size: var(--font-size-header-2);
     background-color: transparent;
     color: #c5c5c5;
     border: none;
     text-align: left;
     text-decoration: none;
-    
+
     /*display: block; bc flex*/
     height: calc(55px + 2.5vw);
     width: 100%;
@@ -456,7 +455,7 @@ hr {
 
 
 
-.hover-button:hover{
+.hover-button:hover {
     position: relative;
     background-color: transparent;
     background-image: var(--hover--image);
@@ -466,7 +465,7 @@ hr {
     /*filter: grayscale(0.7);*/
 }
 
-.hover-button:hover::before{
+.hover-button:hover::before {
     content: '';
     background-color: hsla(0, 0%, 9%);
     position: absolute;
@@ -490,18 +489,19 @@ hr {
     z-index: 1;
 }
 
-.tags{
-    margin-top: 10px;
-    width:95%;
-    height:30%;
+.tags {
+    margin-top: 7px;
+    width: 95%;
+    height: 30%;
 }
 
-.tag{
+.tag {
     background-color: #181818;
-    color:#979797;
+    color: #979797;
     padding: 5px;
     padding-left: 8px;
     padding-right: 8px;
+    margin-bottom: 7px;
     margin-left: 4px;
     margin-right: 4px;
     border-radius: 5px;
@@ -517,7 +517,7 @@ hr {
 
 .tags .tag:hover {
     background-color: #202020;
-    color:#6da8ca;
+    color: #6da8ca;
 }
 
 .filters {
@@ -530,7 +530,7 @@ hr {
     padding-left: 7%;
     padding-top: 3%;
     width: 100%;
-    float:left;
+    float: left;
     height: fit-content;
     padding-bottom: 15px;
     line-height: 200%;
@@ -551,22 +551,22 @@ hr {
     text-align: left;
     text-decoration: none;
     z-index: 5;
-    width:fit-content;
+    width: fit-content;
     cursor: pointer;
     display: inline-block;
 }
 
 .tags .filtertag:hover {
     background-color: #181818;
-    color:#6da8ca;
-    text-decoration:line-through;
+    color: #6da8ca;
+    text-decoration: line-through;
 }
 
-.filtertag .clearIcon{
+.filtertag .clearIcon {
     display: none;
 }
 
-.filtertag:hover .clearIcon{
+.filtertag:hover .clearIcon {
     display: inline;
 }
 
@@ -576,7 +576,8 @@ hr {
     position: relative;
     width: 100%;
     height: auto;
-    padding-bottom: 56.31%; /*32.1*/
+    padding-bottom: 56.31%;
+    /*32.1*/
 }
 
 .video-responsive iframe {
@@ -622,10 +623,10 @@ a:active {
     background: rgba(27, 27, 27, 0.8);
     display: flex;
     align-items: center;
-    z-index:900;
+    z-index: 900;
 }
 
-.overlay img{
+.overlay img {
     display: block;
     max-height: 90%;
     max-width: 90%;
@@ -638,7 +639,7 @@ a:active {
 }
 
 
-  .overlay > span {
+.overlay>span {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -646,8 +647,9 @@ a:active {
     color: #ffffff;
     z-index: 999;
     cursor: pointer;
-  }
-  .overlay-arrows_left {
+}
+
+.overlay-arrows_left {
     display: flex;
     background-color: #6d6d6d;
     justify-content: space-between;
@@ -657,19 +659,19 @@ a:active {
     height: 50px;
     left: 0;
     z-index: 999;
-  }
-  
-  .overlay-arrows_left svg {
+}
+
+.overlay-arrows_left svg {
     width: 50px;
     height: 50px;
-  }
-  
-  .overlay-arrows_right svg {
+}
+
+.overlay-arrows_right svg {
     width: 50px;
     height: 50px;
-  }
-  
-  .overlay-arrows_right {
+}
+
+.overlay-arrows_right {
     display: flex;
     background-color: #6d6d6d;
     justify-content: space-between;
@@ -679,9 +681,9 @@ a:active {
     height: 50px;
     top: 50%;
     z-index: 999;
-  }
+}
 
-  @media only screen and (min-width:1000px) {
+@media only screen and (min-width:1000px) {
     :root {
         --font-size-body: 14px;
         --font-size-header-1: 20px;
@@ -706,7 +708,8 @@ a:active {
 
     .project {
         display: flex;
-        padding-top: 0.7%; /*35px*/
+        padding-top: 0.7%;
+        /*35px*/
     }
 
     .navPlaceholder {
@@ -735,7 +738,7 @@ a:active {
         display: flex;
     }
 
-    .portrait .img{
+    .portrait .img {
         margin-top: 7%;
         width: auto;
         min-width: 20%;
@@ -760,11 +763,11 @@ a:active {
         top: 0;
     }
 
-    .about .aboutme .description{
-        width: 90%;    
+    .about .aboutme .description {
+        width: 90%;
     }
-    
-    .about .aboutme .header{
+
+    .about .aboutme .header {
         width: 90%;
     }
 }

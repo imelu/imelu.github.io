@@ -1,4 +1,4 @@
-{   
+{
     "collaborators": [
         {
             "DanaSenn": [
@@ -94,25 +94,65 @@
     ],
     "projects": [
         {
+            "name": "RatSpiderFrog",
+            "folderName": "RatSpiderFrog",
+            "video": true,
+            "videoEmbedID": "TpTOk8Eka2o?si=RZ5RMstM93a76BGi",
+            "date": "2026",
+            "category": "Personal",
+            "tags": [
+                "gamejam",
+                "coding",
+                "game design"
+            ],
+            "description": [
+                "A cursed auto-battler where you take control of a bunch of rats to fend off enemy attacks. Crossbreed them. Grill them. Feed them. Make them POWERFUL!",
+                "A demo version of this game was launched on Steam in February 2026."
+            ],
+            "links": [
+                {
+                    "type": "Play",
+                    "label": "Steam",
+                    "href": "https://store.steampowered.com/app/4201720/RatSpiderFrog/"
+                },
+                {
+                    "type": "Discord",
+                    "label": "Discord",
+                    "href": "https://discord.com/invite/eXdbEM6k7t"
+                },
+                {
+                    "type": "Follow",
+                    "label": "Website",
+                    "href": "https://flawberrystudio.com/project/ratspiderfrog"
+                }
+            ],
+            "collaborators": [
+                "DanaSenn",
+                "LorenzKleiser",
+                "FlorisDemandt"
+            ]
+        },
+        {
             "name": "Projected Dreams",
             "folderName": "ProjectedDreams",
             "video": true,
-            "videoEmbedID": "3RphgIrffA0?si=sHMttgkuRqaMKd9f",
+            "videoEmbedID": "VdmpCzQuVAo?si=MddZsP63ArUvv5ji",
             "date": "2023",
             "category": "Personal",
             "tags": [
                 "gamejam",
                 "3D art",
-                "animation"
+                "animation",
+                "game design"
             ],
             "description": [
                 "Drag toys from the shelves and drop them on the table to create a shadow play in this cozy puzzle game. As the shadows you cast uncover past family relationships and the environment around you changes and evolves, the lines between reality and fantasy blur.",
-                "Rotate, place, and stack objects on a table in order to recreate a given shadow silhouette on the wall through shadow play. Get creative – There are unlimited solutions to solve puzzles and there’s a variety of achievements to be discovered. You may even find hidden levels!",
-                "The first version of this game was created during the Brackeys GameJam 2022 and is currently in further development."
+                "Rotate, place, and stack objects on a table in order to recreate a given shadow silhouette on the wall through shadow play. Get creative – There are unlimited solutions to solve puzzles and there’s a variety of achievements to be discovered.",
+                "The first version of this game was created during the Brackeys GameJam 2022 and was released on Steam in May 2025, as well as on the Nintendo Switch in March 2026."
             ],
             "links": [
                 {
-                    "type": "Wishlist",
+                    "type": "Play",
                     "label": "Steam",
                     "href": "https://store.steampowered.com/app/2318800/Projected_Dreams/"
                 },
@@ -124,14 +164,15 @@
                 {
                     "type": "Follow",
                     "label": "Website",
-                    "href": "https://flawberrystudio.com/ProjectedDreams"
+                    "href": "https://flawberrystudio.com/project/projected-dreams"
                 }
             ],
             "collaborators": [
                 "DanaSenn",
                 "LorenzKleiser",
                 "RobinGood",
-                "FlorisDemandt"
+                "FlorisDemandt",
+                "AnnieIrniger"
             ]
         },
         {
@@ -143,7 +184,8 @@
             "category": "School",
             "tags": [
                 "coding",
-                "tech art"
+                "tech art",
+                "game design"
             ],
             "description": [
                 "Multifarious is a local multiplayer roguelike survival Game about a mycelium trying to survive and eventually thrive through expanding and entering a symbiosis with the forest around it. The players will each take control of a small mobile part of the same fungus network and try to connect it to various natural resources, expanding the mycelium in the act. Beware of the natural predators, which will periodically find their way to the fungus and try to feed on it if not fended off in time.",
@@ -180,7 +222,8 @@
             "category": "School",
             "tags": [
                 "coding",
-                "tech art"
+                "tech art",
+                "game design"
             ],
             "description": [
                 "Overdog is a game about Corruption.",
@@ -219,7 +262,8 @@
             "tags": [
                 "gamejam",
                 "coding",
-                "tech art"
+                "tech art",
+                "game design"
             ],
             "description": [
                 "Bloody Glitter is a fast paced local multiplayer fighting game. You play as ponies that grab other ponies to beat each other up using those ponies.",
@@ -282,7 +326,8 @@
                 "coding",
                 "tech art",
                 "3D art",
-                "animation"
+                "animation",
+                "game design"
             ],
             "description": [
                 "Unkill is a game about a cowboy moving in reverse and \"unkilling\" rabbits.",
@@ -311,16 +356,15 @@
                 "coding",
                 "tech art",
                 "3D art",
-                "animation"
+                "animation",
+                "game design"
             ],
             "description": [
                 "The 2nd eye is a 2D roguelike action game with the topics of \"Surrealism\" and \"Breakout\".",
                 "Take control of the second eye in a portrait that has come to life, in order to take revenge on the artist for drawing it messed up, unlike the initially drawn eye. During this journey, the eye extends itself with different limbs to unlock additional abilities, in order to fight through all the paintings drawn by the artist to finally reach him.",
                 "My part consisted of creating all the 3D assets with all animations of the character and all the additional limbs, as well as all the enemies. Additionally I did coded enemy behaviour, as well as special abilities for the main character, among some other smaller features."
             ],
-            "links": [
-                
-            ],
+            "links": [],
             "collaborators": [
                 "ThanhLe",
                 "RobinGood",
@@ -337,7 +381,8 @@
             "category": "Personal",
             "tags": [
                 "gamejam",
-                "coding"
+                "coding",
+                "game design"
             ],
             "description": [
                 "Breaking Rat is an idle game, in which you can breed several different animals living in the sewers, trying to create the strongest fighter to send in the underground sewer fightclub.",
@@ -403,9 +448,7 @@
                 "The goal of the Project was to simulate the first few minutes of gameplay of a first person game. The Project was made in collaboration with Dana Senn and Yoshi Zigerli. All 3D Models were made in Blender, which were then imported into Unity, where we put everything together to record the final video.",
                 "My part consisted of modelling the clock tower, interior rooms and the port, as well as the post processing and lighting in unity including the animation of the camera which recorded the video."
             ],
-            "links": [
-                
-            ],
+            "links": [],
             "collaborators": [
                 "DanaSenn",
                 "YoshiZigerli"
