@@ -19,7 +19,9 @@ const YoutubeEmbed = ({ embedId }) => {
       ) : (
         <button className="video-preview" onClick={() => setPlaying(true)} aria-label="Play project video">
           <img src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`} alt="" loading="lazy" decoding="async" width="480" height="360" />
-          <span className="video-play">▶ <span>Play video</span></span>
+          <svg className="video-play" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M20 10 L54 32 L20 54 Z" fill="currentColor" />
+          </svg>
         </button>
       )}
     </div>

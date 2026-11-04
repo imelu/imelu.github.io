@@ -23,28 +23,6 @@ export default class Navigation extends Component {
     render(){
         return(
             <>
-            <nav className="mobile-navigation" aria-label="Portfolio navigation">
-                <a href="#About">Luca Imesch</a>
-                <select aria-label="Jump to project" defaultValue="" onChange={(event) => {
-                    if (event.target.value) window.location.hash = event.target.value;
-                    event.target.value = '';
-                }}>
-                    <option value="" disabled>Jump to project</option>
-                    {ProjectData.projects.filter(this.containsTag).map(project => (
-                        <option key={project.folderName} value={project.folderName}>{project.name}</option>
-                    ))}
-                </select>
-                <select aria-label="Filter projects" defaultValue="" onChange={(event) => {
-                    this.props.addFilter(event.target.value);
-                    event.target.value = '';
-                }}>
-                    <option value="" disabled>Filter projects</option>
-                    {[...new Set(ProjectData.projects.flatMap(project => project.tags))].map(tag => (
-                        <option key={tag} value={tag}>{tag}</option>
-                    ))}
-                </select>
-                {this.props.tags.length > 0 && <Filters tags={this.props.tags} removeFilter={this.props.removeFilter} />}
-            </nav>
             <div className="navigation">
                 <a href='#About'>
                     <button className='about-button'>
