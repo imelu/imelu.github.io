@@ -1,4 +1,3 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300&display=swap');
 
 :root {
     --font-body: 'Montserrat', sans-serif;
@@ -7,10 +6,15 @@
     --font-size-header-2: 30px;
     --font-size-header-3: 50px;
     --font-size-filters: 16px;
+    --sidebar-width: clamp(220px, 18vw, 340px);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body {
-    font: var(--font-body);
+    font-family: var(--font-body);
     margin: 20px;
     background-color: #181818;
     color: #fff;
@@ -237,6 +241,7 @@ hr {
     margin-top: 3%;
     position: relative;*/
     padding-top: 50px;
+    display: flow-root;
 }
 
 .column {
@@ -257,7 +262,7 @@ hr {
     height: auto;
     left: 0;
     top: 0;
-    float: left;
+    display: block;
 }
 
 .sub-image img {
@@ -267,7 +272,11 @@ hr {
 }
 
 .project .header {
-    float: left;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 16px;
     height: auto;
     width: 100%;
     margin-bottom: 1%;
@@ -276,10 +285,7 @@ hr {
 }
 
 .project .header .title {
-    float: left;
-    min-width: 50%;
-    margin-top: calc(6% - 1vw);
-    ;
+    margin-top: 16px;
     height: auto;
     font-family: var(--font-body);
     font-size: var(--font-size-header-2);
@@ -290,8 +296,6 @@ hr {
 .project .header .links {
     margin-top: 1%;
     text-align: right;
-    float: right;
-    width: 40%;
     height: auto;
     padding-bottom: 0%;
 }
@@ -303,15 +307,12 @@ hr {
 }
 
 .project .descriptionbox {
-    float: left;
-    max-height: 30%;
-    position: static;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .project .descriptionbox .description {
-    float: left;
-    max-height: 30%;
-    position: static;
+    min-width: 0;
 }
 
 .project .descriptionbox .description p {
@@ -324,14 +325,16 @@ hr {
 }
 
 .project .descriptionbox .collaborators {
-    float: left;
-    max-height: 30%;
-    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 12px;
     overflow-wrap: break-word;
     color: rgb(221, 221, 221);
 }
 
 .project .descriptionbox .collaborators p {
+    margin: 0 0 8px;
     text-align: left;
     font-family: var(--font-body);
     font-size: var(--font-size-body);
@@ -341,8 +344,7 @@ hr {
 .sideBar {
     height: calc(100% - 2*(60px + 1.4vw) - 1%);
     /* 100% Full-height */
-    width: 17%;
-    min-width: 250px;
+    width: var(--sidebar-width);
     /*width: calc(125px + 11vw);*/
     /* 0 width - change this with JavaScript */
     position: fixed;
@@ -392,7 +394,7 @@ hr {
     z-index: 0;
     top: 0;
     position: fixed;
-    width: 17%;
+    width: var(--sidebar-width);
     left: 0;
 
     padding-left: 7%;
@@ -571,12 +573,11 @@ hr {
 }
 
 .video-responsive {
-    float: left;
     overflow: hidden;
     position: relative;
     width: 100%;
     height: auto;
-    padding-bottom: 56.31%;
+    padding-bottom: 56.25%;
     /*32.1*/
 }
 
@@ -586,6 +587,62 @@ hr {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+.video-preview {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background: #202020;
+    color: #fff;
+}
+
+.video-preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    font: 16px/1.5 var(--font-body);
+    white-space: nowrap;
+}
+
+.mobile-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.mobile-navigation select {
+    max-width: 100%;
+    min-width: 0;
+    padding: 10px;
+    background: #202020;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.about .aboutme .contact {
+    flex-wrap: wrap;
+    text-align: left;
+    overflow-wrap: anywhere;
 }
 
 html {
@@ -685,10 +742,10 @@ a:active {
 
 @media only screen and (min-width:1000px) {
     :root {
-        --font-size-body: 14px;
+        --font-size-body: clamp(14px, 1.6vh, 20px);
         --font-size-header-1: 20px;
         --font-size-header-2: 22px;
-        --font-size-header-3: 40px;
+        --font-size-header-3: clamp(28px, 2.5vw, 44px);
         --font-size-filters: 12px;
     }
 
@@ -706,27 +763,93 @@ a:active {
         display: block;
     }
 
+    .mobile-navigation {
+        display: none;
+    }
+
     .project {
-        display: flex;
-        padding-top: 0.7%;
-        /*35px*/
+        display: grid;
+        grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr);
+        gap: clamp(16px, 2vw, 40px);
+        margin-left: var(--sidebar-width);
+        padding: 24px 0 24px clamp(16px, 2vw, 40px);
+        min-height: 100vh;
+        min-height: 100svh;
     }
 
     .navPlaceholder {
-        width: 25%;
-        min-width: 250px;
+        width: var(--sidebar-width);
+        flex-shrink: 0;
     }
 
-    .colMain {
-        width: 50%;
-        padding-left: 8%;
-        padding-right: 2%;
+    .project .navPlaceholder {
+        display: none;
     }
 
-    .colSub {
-        width: 25%;
-        padding-left: 1%;
-        padding-right: 10%;
+    .project .colMain {
+        display: grid;
+        grid-template-rows: minmax(0, 1fr) auto auto;
+        gap: 12px;
+        height: calc(100vh - 48px);
+        height: calc(100svh - 48px);
+        min-width: 0;
+    }
+
+    .project .colSub {
+        height: calc(100vh - 48px);
+        height: calc(100svh - 48px);
+        min-width: 0;
+    }
+
+    .project .main-image,
+    .project .main-image .img {
+        min-height: 0;
+        height: 100%;
+    }
+
+    .project .main-image .img img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .project .video-responsive {
+        height: 100%;
+        padding-bottom: 0;
+        background: #202020;
+    }
+
+    .project .video-preview img {
+        object-fit: contain;
+    }
+
+    .project .header {
+        margin: 0;
+    }
+
+    .project .header .title,
+    .project .header .links,
+    .project .header .links p {
+        margin: 0;
+    }
+
+    .project .description p {
+        margin: 0 0 10px;
+    }
+
+    .project .sub-image {
+        display: grid;
+        grid-template-rows: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+        height: 100%;
+    }
+
+    .project .sub-image img {
+        display: block;
+        height: 100%;
+        min-height: 0;
+        margin: 0;
+        object-fit: contain;
+        cursor: pointer;
     }
 
     hr {
@@ -734,8 +857,15 @@ a:active {
     }
 
     .about {
-        padding-left: 8%;
-        display: flex;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: clamp(20px, 3vw, 60px);
+        margin-left: var(--sidebar-width);
+        padding-left: clamp(16px, 2vw, 40px);
+    }
+
+    .about .navPlaceholder {
+        display: none;
     }
 
     .portrait .img {
@@ -745,14 +875,14 @@ a:active {
     }
 
     .aboutme {
-        width: 35%;
-        padding-right: 2%;
+        min-width: 0;
+        width: 100%;
     }
 
     .cv {
-        width: 35%;
-        margin-left: 3%;
-        margin-right: 10%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .vl {
@@ -774,25 +904,18 @@ a:active {
 
 @media only screen and (min-width:2000px) {
     :root {
-        --font-size-body: 20px;
         --font-size-header-1: 24px;
         --font-size-header-2: 30px;
         --font-size-header-3: 50px;
         --font-size-filters: 16px;
     }
 
-    .project {
-        display: flex;
-        padding-top: 35px;
-    }
 }
 
-@media only screen and (min-width:3000px) {
-    :root {
-        --font-size-body: 26px;
-        --font-size-header-1: 28px;
-        --font-size-header-2: 36px;
-        --font-size-header-3: 6px;
-        --font-size-filters: 19px;
+/* Preserve readable content when zoom or a very short window leaves little height. */
+@media only screen and (min-width:1000px) and (max-height:600px) {
+    .project .colMain {
+        height: auto;
+        grid-template-rows: minmax(180px, 40vh) auto auto;
     }
 }

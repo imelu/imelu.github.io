@@ -2,7 +2,7 @@ import React, { Component, useState, useRef } from 'react';
 import '../index.css';
 import YoutubeEmbed from "../YoutubeEmbed";
 import { AdvancedImage } from '@cloudinary/react'
-import { Cloudinary } from '@cloudinary/url-gen';
+import portfolioImage from '../portfolioImage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faItchIo, faYoutube, faSteam, faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faUpRightFromSquare, faGlobe } from '@fortawesome/free-solid-svg-icons'
@@ -10,11 +10,6 @@ import { faFile } from '@fortawesome/free-regular-svg-icons'
 import ModalImage from "react-modal-image";
 
 
-const myCld = new Cloudinary({
-    cloud: {
-        cloudName: "dehtondds",
-    },
-});
 
 const projectPath = 'Portfolio/Images/';
 
@@ -57,7 +52,7 @@ export default class Project extends Component {
                             <YoutubeEmbed embedId={this.props.project.videoEmbedID} />
                             :
                             <div className="img">
-                                <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/Title.png`)} alt="1" />
+                                <AdvancedImage loading="lazy" decoding="async" width="1280" height="720" cldImg={portfolioImage(`${projectPath}${this.props.project.folderName}/Title.png`)} alt={this.props.project.name} />
                             </div>
                             }
                             
@@ -115,10 +110,10 @@ export default class Project extends Component {
                     </div>
                     <div className="column colSub">
                         <div className="sub-image">
-                            <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/1_small.png`)} alt="1" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 1)} />
-                            <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/2_small.png`)} alt="2" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 2)} />
-                            <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/3_small.png`)} alt="3" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 3)} />
-                            <AdvancedImage cldImg={myCld.image(`${projectPath}${this.props.project.folderName}/4_small.png`)} alt="4" onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 4)} />
+                            <AdvancedImage loading="lazy" decoding="async" width="960" height="540" cldImg={portfolioImage(`${projectPath}${this.props.project.folderName}/1_small.png`, 960)} alt={`${this.props.project.name} screenshot 1`} onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 1)} />
+                            <AdvancedImage loading="lazy" decoding="async" width="960" height="540" cldImg={portfolioImage(`${projectPath}${this.props.project.folderName}/2_small.png`, 960)} alt={`${this.props.project.name} screenshot 2`} onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 2)} />
+                            <AdvancedImage loading="lazy" decoding="async" width="960" height="540" cldImg={portfolioImage(`${projectPath}${this.props.project.folderName}/3_small.png`, 960)} alt={`${this.props.project.name} screenshot 3`} onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 3)} />
+                            <AdvancedImage loading="lazy" decoding="async" width="960" height="540" cldImg={portfolioImage(`${projectPath}${this.props.project.folderName}/4_small.png`, 960)} alt={`${this.props.project.name} screenshot 4`} onClick={() => this.props.onClickedImg((`${projectPath}${this.props.project.folderName}/`), 4)} />
                         </div>
                     </div>
                     <hr></hr>

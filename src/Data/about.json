@@ -1,4 +1,4 @@
-{   
+{
     "about": [
         {
             "header": [
@@ -10,7 +10,7 @@
             "contact": [
                 "Please feel free to contact me:"
             ],
-            "contactMail":[
+            "contactMail": [
                 "luca-imesch@hotmail.ch"
             ],
             "links": [
@@ -25,23 +25,21 @@
                     "href": "https://github.com/imelu"
                 }
             ],
-            
             "cv": [
                 {
                     "Experience": [
-                        {
-                            "Company": "Aupa.io",
-                            "href": "https://aupa.io/",
-                            "Position": "Software Engineer",
-                            "Duration": "2024 - Present"
-                        },
                         {
                             "Company": "Flawberry Studio",
                             "href": "https://flawberrystudio.com/",
                             "Position": "Game Designer and 3D Artist",
                             "Duration": "2022 - Present"
                         },
-                        
+                        {
+                            "Company": "Aupa.io",
+                            "href": "https://aupa.io/",
+                            "Position": "Software Engineer",
+                            "Duration": "2024 - 2026"
+                        },
                         {
                             "Company": "Cool Code",
                             "href": "https://www.coolcode.io/",
@@ -96,69 +94,69 @@
                     "IncludeSkills": "n",
                     "Languages": [
                         {
-                            "Language": "German", 
+                            "Language": "German",
                             "Score": "5"
                         },
                         {
-                            "Language": "English", 
+                            "Language": "English",
                             "Score": "5"
                         },
                         {
-                            "Language": "French", 
+                            "Language": "French",
                             "Score": "2"
                         }
                     ],
                     "Skills": [
                         {
-                            "Skill": "Coding", 
+                            "Skill": "Coding",
                             "Score": "5"
                         },
                         {
-                            "Skill": "Game Mechanics", 
+                            "Skill": "Game Mechanics",
                             "Score": "5"
                         },
                         {
-                            "Skill": "3D Modeling", 
+                            "Skill": "3D Modeling",
                             "Score": "4"
                         },
                         {
-                            "Skill": "3D Animation", 
+                            "Skill": "3D Animation",
                             "Score": "3"
                         }
                     ],
                     "ProgrammingLanguages": [
                         {
-                            "Language": "C#", 
+                            "Language": "C#",
                             "Score": "5"
                         },
                         {
-                            "Language": "Java", 
+                            "Language": "Java",
                             "Score": "4"
                         },
                         {
-                            "Language": "C", 
+                            "Language": "C",
                             "Score": "4"
                         },
                         {
-                            "Language": "Assembly", 
+                            "Language": "Assembly",
                             "Score": "3"
                         }
                     ],
                     "Programs": [
                         {
-                            "Program": "Unity", 
+                            "Program": "Unity",
                             "Score": "5"
                         },
                         {
-                            "Program": "Blender", 
+                            "Program": "Blender",
                             "Score": "4"
                         },
                         {
-                            "Program": "Git", 
+                            "Program": "Git",
                             "Score": "4"
                         },
                         {
-                            "Program": "Adobe Photoshop", 
+                            "Program": "Adobe Photoshop",
                             "Score": "4"
                         }
                     ]

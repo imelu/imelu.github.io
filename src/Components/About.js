@@ -2,17 +2,12 @@ import React, { Component, useState, useRef } from 'react';
 import '../index.css';
 import AboutData from '../Data/about.json';
 import { AdvancedImage } from '@cloudinary/react'
-import { Cloudinary } from '@cloudinary/url-gen';
+import portfolioImage from '../portfolioImage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import Pdf from '../Documents/CV_LucaImesch.pdf';
 
-const myCld = new Cloudinary({
-    cloud: {
-        cloudName: "dehtondds",
-    },
-});
 
 const projectPath = 'Portfolio/Images/';
 
@@ -36,7 +31,7 @@ export default class About extends Component {
                     <div className="navPlaceholder"></div>
                     <div className='columnCV aboutme'>
                         <div className="portrait">
-                            <AdvancedImage cldImg={myCld.image(`${projectPath}/About/Portrait_cropped.jpg`)} alt="1" className = "img"/>
+                            <AdvancedImage decoding="async" cldImg={portfolioImage(`${projectPath}/About/Portrait_cropped.jpg`)} alt="1" className = "img"/>
                         </div>
                         <div className='header'>
                             {AboutData.about[0].header.map((d)=>{
@@ -143,7 +138,7 @@ export default class About extends Component {
                             return(
                                 <p key={AboutData.about[0].cv[0].Languages.indexOf(lang, 0)} className='skill'>
                                     {lang.Language}
-                                    <AdvancedImage cldImg={myCld.image(`${projectPath}/Scoring/${lang.Score}.png`)} alt="1" className="score" />
+                                    <AdvancedImage loading="lazy" decoding="async" cldImg={portfolioImage(`${projectPath}/Scoring/${lang.Score}.png`)} alt="1" className="score" />
                                 </p>
                             )
                         } )}
@@ -153,7 +148,7 @@ export default class About extends Component {
                             return(
                                 <p key={AboutData.about[0].cv[0].Skills.indexOf(skills, 0)} className='skill'>
                                     {skills.Skill}
-                                    <AdvancedImage cldImg={myCld.image(`${projectPath}/Scoring/${skills.Score}.png`)} alt="1" className="score" />
+                                    <AdvancedImage loading="lazy" decoding="async" cldImg={portfolioImage(`${projectPath}/Scoring/${skills.Score}.png`)} alt="1" className="score" />
                                 </p>
                             )
                         } )}
@@ -163,7 +158,7 @@ export default class About extends Component {
                             return(
                                 <p key={AboutData.about[0].cv[0].ProgrammingLanguages.indexOf(lang, 0)} className='skill'>
                                     {lang.Language}
-                                    <AdvancedImage cldImg={myCld.image(`${projectPath}/Scoring/${lang.Score}.png`)} alt="1" className="score" />
+                                    <AdvancedImage loading="lazy" decoding="async" cldImg={portfolioImage(`${projectPath}/Scoring/${lang.Score}.png`)} alt="1" className="score" />
                                 </p>
                             )
                         } )}
@@ -173,7 +168,7 @@ export default class About extends Component {
                             return(
                                 <p key={AboutData.about[0].cv[0].Programs.indexOf(prog, 0)} className='skill'>
                                     {prog.Program}
-                                    <AdvancedImage cldImg={myCld.image(`${projectPath}/Scoring/${prog.Score}.png`)} alt="1" className="score" />
+                                    <AdvancedImage loading="lazy" decoding="async" cldImg={portfolioImage(`${projectPath}/Scoring/${prog.Score}.png`)} alt="1" className="score" />
                                 </p>
                             )
                         } )}

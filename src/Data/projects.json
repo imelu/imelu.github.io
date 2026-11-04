@@ -241,11 +241,6 @@
                     "type": "Gameplay",
                     "label": "Video",
                     "href": "https://youtu.be/LVVen4IanSA"
-                },
-                {
-                    "type": "Source",
-                    "label": "Git",
-                    "href": "https://github.com/imelu/overdog"
                 }
             ],
             "collaborators": [
@@ -275,11 +270,6 @@
                     "type": "Play",
                     "label": "Itch",
                     "href": "https://akandamador.itch.io/bloody-glitter"
-                },
-                {
-                    "type": "Source",
-                    "label": "Git",
-                    "href": "https://github.com/imelu/bloodyGlitter"
                 }
             ],
             "collaborators": [
@@ -394,11 +384,6 @@
                     "type": "Play",
                     "label": "Itch",
                     "href": "https://aoyuna.itch.io/breaking-rat"
-                },
-                {
-                    "type": "Source",
-                    "label": "Git",
-                    "href": "https://github.com/imelu/BreakingRat"
                 }
             ],
             "collaborators": [

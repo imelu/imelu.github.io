@@ -4,6 +4,7 @@ import './index.css';
 import Navigation from './Components/Navigation'
 import Projects from './Components/Projects'
 import About from './Components/About';
+import PortfolioErrorBoundary from './Components/PortfolioErrorBoundary';
 
 
 export default class App extends Component {
@@ -15,28 +16,17 @@ export default class App extends Component {
     }
 
     onAddFilter = (tag) => {
-        if(this.state.filteredTags.includes(tag)) return;
-        this.setState(state => {
-            const list = state.filteredTags.push(tag)
-
-            return {
-                list,
-                value: '',
-            };
-        })
+        this.setState(state => ({
+            filteredTags: state.filteredTags.includes(tag)
+                ? state.filteredTags
+                : [...state.filteredTags, tag]
+        }));
     }
 
     onRemoveFilter = (tag) => {
-        var index = this.state.filteredTags.indexOf(tag);
-        
-        this.setState(state => {
-            const list = state.filteredTags.splice(index, 1);
-    
-            return {
-                list,
-                value: '',
-            };            
-        })
+        this.setState(state => ({
+            filteredTags: state.filteredTags.filter(value => value !== tag)
+        }));
     }
 
     render(){
@@ -54,5 +44,5 @@ export default class App extends Component {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <App />
+    <PortfolioErrorBoundary><App /></PortfolioErrorBoundary>
 );
